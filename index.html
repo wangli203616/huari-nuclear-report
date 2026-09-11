@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>华日通讯服务中核集团核电站及重要设施</title>
+<style>
+:root{--paper:#f6f4ef;--card:#fff;--ink:#1d2733;--ink2:#45535f;--ink3:#85919b;
+--navy:#122b44;--navy2:#1b3f63;--teal:#0d5c57;--teal-soft:#e4efec;
+--gold:#a88532;--gold-soft:#f5ecd7;--line:#e5e0d6;--danger:#9d3a32;--danger-soft:#f8e8e5;
+--warn:#866013;--warn-soft:#faf1da;--ok:#2e6b45;--ok-soft:#e7f1ea}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;background:var(--paper);color:var(--ink);line-height:1.78;font-size:15.5px;padding:12px 12px 96px}
+.page{max-width:920px;margin:0 auto}
+.cover{background:linear-gradient(145deg,#0d2338,#17415f 60%,#1c5672);border-radius:20px;color:#f0f4f8;padding:32px 22px 24px;margin-bottom:18px;position:relative;overflow:hidden}
+.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.05)}
+.cover .k{display:inline-block;font-size:11.5px;letter-spacing:.14em;background:rgba(255,255,255,.13);padding:4px 12px;border-radius:999px;color:#d8e5ef;margin-bottom:14px}
+.cover h1{font-size:clamp(21px,5vw,31px);line-height:1.4;margin-bottom:10px}
+.cover .sub{font-size:13.5px;color:#bcd0df;line-height:1.7}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px}
+.toc h2{font-size:14.5px;color:var(--ink2);margin-bottom:10px}
+.toc-grid{display:grid;grid-template-columns:1fr;gap:4px}
+@media(min-width:680px){.toc-grid{grid-template-columns:1fr 1fr}}
+.toc a{font-size:13px;color:var(--navy);text-decoration:none;padding:5px 7px;border-radius:8px;line-height:1.45;display:block}
+.toc a:hover{background:var(--teal-soft)}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 16px;margin-bottom:16px}
+@media(min-width:720px){section{padding:28px 30px}}
+h1,h2,h3,h4,h5{color:var(--navy);line-height:1.45}
+h2{font-size:clamp(17px,3.6vw,21px);margin:6px 0 14px;display:flex;align-items:center;gap:9px}
+h2 .no{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 6px;border-radius:9px;background:var(--navy);color:#fff;font-size:13px}
+h3{font-size:16px;color:var(--navy2);margin:22px 0 10px}
+h3::before{content:"▍";color:var(--gold)}
+h4{font-size:14.5px;margin:14px 0 6px}
+p{margin:0 0 11px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin:5px 0}
+strong,b{color:var(--navy)}
+blockquote{border-left:4px solid var(--gold);background:var(--gold-soft);border-radius:10px;padding:12px 15px;margin:12px 0;font-size:13.5px;color:#5b4a1d}
+blockquote p{margin:2px 0}
+hr{border:none;border-top:1px dashed var(--line);margin:22px 0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;margin:12px 0 16px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:12.8px;background:#fff}
+th{background:#edf1f5;color:var(--navy);text-align:left;padding:8px 9px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 9px;border-bottom:1px solid #f0ece4;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#fbfaf7}
+.tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;margin:0 2px;white-space:nowrap}
+.tag.fact{background:var(--ok-soft);color:var(--ok)}
+.tag.media{background:var(--warn-soft);color:var(--warn)}
+.tag.quote{background:#e7eefb;color:#2c5282}
+.tag.pending{background:#f1e7f5;color:#6b3f7d}
+.callout{background:var(--teal-soft);border-left:4px solid var(--teal);border-radius:12px;padding:13px 15px;margin:13px 0}
+.foot{text-align:center;color:var(--ink3);font-size:11.5px;margin-top:18px;border-top:1px solid var(--line);padding-top:14px;line-height:1.8}
+.btn-top{position:fixed;right:14px;bottom:16px;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;border:none;font-size:19px;box-shadow:0 6px 18px rgba(16,42,58,.28);z-index:60;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.btn-top.show{opacity:1;pointer-events:auto}
+@media print{.cover,.toc,.btn-top{display:none}body{background:#fff;padding:0}section{border:none}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="cover">
+  <span class="k">深度研究报告 · 中核集团为主</span>
+  <h1>华日通讯服务中核集团核电站及重要设施</h1>
+  <div class="sub">低空防御 · 电磁频谱安全 · 核电站与重要设施 ｜ 调研日期 2026-09-11 ｜ 外部 Chrome + 官方采购平台/公告核实 ｜ 置信度标签：<span style="color:#9fd3c7">已证实</span> / <span style="color:#e8c98b">采购转述</span> / <span style="color:#f0b8b0">媒体口径</span></div>
+</header>
+<nav class="toc"><h2>📑 目录（点击跳转）</h2><div class="toc-grid"><a href="#s1">低空防御与电磁频谱安全深度研究报告</a><a href="#s2">0. 一页结论</a><a href="#s3">1. 需求侧：为什么核电站必须建设低空与电磁安全能力</a><a href="#s4">2. 中核集团：组织、采购体系与采购证据</a><a href="#s5">3. 华日通讯能力全景（可服务核工业的资产盘点）</a><a href="#s6">4. 场景映射：华日如何服务中核核电站（8 个场景）</a><a href="#s7">5. 竞争格局与华日定位</a><a href="#s8">6. 商业模式与项目量级（含估算，需谨慎使用）</a><a href="#s9">7. 进入路径与 90 天行动计划</a><a href="#s10">8. 风险与合规清单</a><a href="#s11">9. 尽调与访谈问题清单</a><a href="#s12">10. 结论</a><a href="#s13">附录 A：已核实采购/案例清单（速查）</a><a href="#s14">附录 B：主要来源</a></div></nav>
+
+<h2 class="sec" id="s1"><span class="no">1</span>低空防御与电磁频谱安全深度研究报告</h2>
+<blockquote><p>编制日期：2026-09-11 ｜ 调研方式：deep-research（外部 Chrome + 官方采购平台/公告/权威媒体 + 工作区既有华日研报）</p><p>重心：<strong>以中核集团为主</strong>，中广核/国核示范作为对标参照</p><p>置信度标注：<span class="tag fact">已证实</span>官方公告/采购文件/权威媒体原文；<span class="tag quote">采购转述</span>招标平台/聚合平台摘要；<span class="tag media">媒体口径</span>企业宣传或媒体文章；<span class="tag pending">推测</span>证据链推断；<span class="tag pending">待核实</span>公开渠道未确认</p><p>声明：本报告用于产业研究与商务拓展参考，不构成投资、法律或合规意见；反制设备的部署与使用受无线电管理、公安、军民航等多重监管，具体以主管部门审批与律师意见为准。</p></blockquote>
+<hr>
+<h2 class="sec" id="s2"><span class="no">2</span>0. 一页结论</h2>
+<h3>0.1 核心判断</h3>
+<ol>
+<li><strong>需求真实、预算化、持续十年以上</strong>：中核体系对核设施低空防御的探索至少始于 2016–2017 年（中原公司承担国家能源局《核设施实物保护小型飞行器防御系统》科研项目），此后中国核电工程有限公司（下称"中核工程"）在 2021 年招标《核电厂电磁环境预警系统研究》，2024–2026 年连续采购低空防御指挥控制设备、无线电侦测设备、低空探测雷达及实物保护系统设备；秦山、田湾、海南、霞浦、福清等核电基地也在采购无人机及相关系统。</li>
+<li><strong>中核工程是低空防御与实物保护的核心甲方</strong>：多个关键项目（电磁环境预警、低空入侵防御、低空防御指挥控制、漳州 3/4 号机组实物保护）均由中核工程作为招标人，采购代理常见中核（上海）供应链管理有限公司、中核第四研究设计工程有限公司、北京国科军友等。</li>
+<li><strong>在位供应商已经形成</strong>：北京星际联盟科技有限公司同时拿下大亚湾 2017 年低空管控系统、2025 年 2024-LY-0046 无线电侦测设备、2026 年中核西仪低空探测雷达（135 万元）；历正科技据媒体口径拿下沿海某核电站低空安防升级项目；国核示范 2024 年低空防御系统由上海航天电子通讯设备研究所中标。<strong>核电低空防御不是空白市场，而是已有玩家、正在扩容的市场。</strong></li>
+<li><strong>华日的机会不在"反制硬件"，而在"电磁环境 + 低空频谱 + 平台"三件事</strong>：</li>
+</ol>
+<ul>
+<li>① 核电厂电磁环境本底测绘与实时预警（对应中核工程 2021 年招标的传感器 + 射频分析软件 + 抗扰度 + 系统集成）；</li>
+<li>② 低空无人机频谱侦测、协议解析、AOA/TDOA 定位与识别（华日核心能力，但需面对星际联盟的先发优势）；</li>
+<li>③ 多基地低空/频谱统一管理平台，以及面向无线电管理机构的"反制设备监管平台"（福建、吉林等省已开始招标，是华日传统客户的新预算科目）。</li>
+</ul>
+<ol>
+<li><strong>短期最优路径是"联合体/分包切入，而非整包竞争"</strong>：以电磁环境评估、频谱监测子系统、平台软件身份与中核工程系集成商、反制厂商或已有核电供应商组队，先做研究/评估类小项目，再争取核电站试点，最后做多基地平台与运维。</li>
+</ol>
+<h3>0.2 三个最关键的事实</h3>
+<ul>
+<li><strong>威胁是真实的</strong>：2025 年 2 月切尔诺贝利核电站"新安全封闭体"遭无人机袭击受损，IAEA 确认无核泄漏；2025 年 12 月报道修复需 3–4 年——最高等级核设施也会被小型无人机突破。</li>
+<li><strong>采购是真实的</strong>：2017 年科研评审 → 2021 年电磁环境预警研究 → 2024–2026 年低空防御指挥控制、无线电侦测、低空探测雷达、实物保护设备连续采购；单笔雷达采购 135 万元即为公开可见的量级锚点。</li>
+<li><strong>华日的短板是真实的</strong>：公开渠道<strong>未检索到华日与核电/能源行业的任何直接中标或合作记录</strong>；中广核新能源反无人机框架采购明确要求近三年至少 1 个反无人机主动防御系统业绩——<strong>业绩门槛是华日进入该市场的第一道硬约束</strong>。</li>
+</ul>
+<hr>
+<h2 class="sec" id="s3"><span class="no">3</span>1. 需求侧：为什么核电站必须建设低空与电磁安全能力</h2>
+<h3>1.1 威胁案例</h3>
+<div class="tw"><table><thead><tr><th>案例</th><th>时间</th><th>事实</th><th>置信度/来源</th></tr></thead><tbody><tr><td>切尔诺贝利核电站新安全封闭体（NSC）遭无人机袭击</td><td>2025-02</td><td>NSC 防护罩受损，IAEA 声明未发生核泄漏；2025-12 报道称修复需 3–4 年</td><td><span class="tag fact">已证实</span>央视网/IAEA 声明转述/外媒</td></tr><tr><td>北京无人机"黑飞"查处</td><td>2025 年多起</td><td>延庆、房山、通州、大兴机场净空区、海淀、朝阳、昌平等多起案件被警方查获</td><td><span class="tag media">媒体口径</span>华日方案 PDF 第 4 页</td></tr><tr><td>机场扰航事件</td><td>2021–2025</td><td>杭州萧山、成都双流、珠海、天津滨海、宜昌三峡、乌鲁木齐天山等机场多次发生无人机扰航</td><td><span class="tag media">媒体口径</span>华日方案 PDF 第 5 页</td></tr><tr><td>公安部打击"黑飞"典型案例</td><td>2026-02 公布</td><td>2025-12 起全国部署"净空"专项；公布 8 起典型案例，含管制空域黑飞、伪造申请材料等</td><td><span class="tag fact">已证实</span>公安部/新华网</td></tr></tbody></table></div>
+<p><strong>含义</strong>：核电站属于"低慢小"目标防御的最高等级场景——一旦发生入侵或攻击，后果不只是经济损失，而是核安全与国家安全事件。切尔诺贝利案例把"核设施低空防御"从理论风险变成了现实事件。</p>
+<h3>1.2 法规与管制框架</h3>
+<ol>
+<li><strong>《无人驾驶航空器飞行管理暂行条例》（国令第 771 号，2024-01-01 施行）</strong><span class="tag fact">已证实</span></li>
+</ol>
+<ul>
+<li>管制空域包括机场周边、军事区、<strong>核设施等敏感区域</strong>，飞行须提前审批；</li>
+<li>2026 年《治安管理处罚法》新增条款：黑飞情节较重处 5–10 日拘留，非法穿越国境 10–15 日；危害公共安全可追刑责。</li>
+</ul>
+<ol>
+<li><strong>反制设备的合法性红线</strong><span class="tag fact">已证实</span>：《条例》第五十二条规定，非法拥有、使用无人驾驶航空器反制设备的，由无线电管理机构、公安机关按职责分工<strong>没收</strong>，可处 5 万元以下罚款；情节严重的处 5 万–20 万元罚款。<strong>干扰/诱骗设备不是普通安防产品，核电站部署必须由授权主体实施。</strong></li>
+<li><strong>《民用无人驾驶航空器无线电管理暂行办法》（工信部，2023-12）</strong><span class="tag fact">已证实</span>：无人机通信系统的发射设备型号核准、频率使用、电台设置纳入无线电管理——<strong>无线电管理机构是低空频谱监管的法定执行方</strong>。</li>
+<li><strong>核安全与实物保护要求</strong>：国家核安全法规要求核电厂具备完善的电磁兼容性（EMC）设计；中广核旗下北京广利核系统工程有限公司与核工业标准化研究所正在牵头编制《核电厂 仪表、控制和电力系统 电磁兼容性试验要求》（计划号 20256875-t-469）<span class="tag quote">已证实-标准平台</span>。</li>
+<li><strong>实物保护监管</strong>：生态环境部核与辐射安全中心"核安保可视化监督联合实验室"2026 年 7 月采购核电厂实物保护系统建模服务（预算 80 万元）<span class="tag quote">已证实-政府采购公告</span>。</li>
+</ol>
+<h3>1.3 核电站场景的六个特殊性</h3>
+<ol>
+<li><strong>电磁兼容优先于反制效果</strong>：核安全级仪控、通信、调度系统不能受干扰；反制手段（尤其大功率干扰/诱骗）必须"最小影响"，否则可能造成比无人机本身更大的风险。</li>
+<li><strong>强电磁环境与复杂地形</strong>：核电站厂区周边有港口、雷达、工业设备、多运营商基站，低空侦测必须在复杂底噪中保持低虚警率。</li>
+<li><strong>7×24 常态化 + 无人值守</strong>：不能依赖人工"耳听眼观"，需要固定式侦测 + 自动告警 + 分级处置。</li>
+<li><strong>涉密与合规</strong>：核电站属敏感设施，供应商需相应保密资质与股东穿透审查，外资/敏感背景受限。</li>
+<li><strong>多基地与新建/存量并存</strong>：中核旗下核电基地分布全国，新建机组（如漳州 3/4 号）实物保护随工程采购，存量基地做技改/升级——两条需求线并行。</li>
+<li><strong>应急与运输延伸</strong>：核应急通信保障、核材料/核燃料运输沿途的低空与通信安全，都是低空+频谱能力的延伸场景。</li>
+</ol>
+<h3>1.4 需求清单（八类）</h3>
+<ol>
+<li>厂区电磁环境本底测绘与实时预警（敏感点位实时测量/报警、EMC 实时评估）；</li>
+<li>低空无人机频谱侦测、识别、定位（含飞手定位）；</li>
+<li>低空综合管控平台（探测→决策→处置→复盘，与现有安防/实物保护系统联动）；</li>
+<li>反制处置（干扰/诱骗/网捕/激光，须合规主体实施，华日以侦测与平台为主）；</li>
+<li>GNSS/授时干扰监测（保护通信、调度、授时系统）；</li>
+<li>核应急通信保障与现场频谱监测（监测车、快速部署、重大活动/演习保障）；</li>
+<li>多基地统一管理平台与数据联网；</li>
+<li>反制设备监管平台/省级无线电管理协同平台。</li>
+</ol>
+<hr>
+<h2 class="sec" id="s4"><span class="no">4</span>2. 中核集团：组织、采购体系与采购证据</h2>
+<h3>2.1 中核体系与相关主体</h3>
+<ul>
+<li><strong>中核集团（CNNC）</strong>：核军工、核电、核燃料循环、核技术应用全产业链央企。</li>
+<li><strong>中国核电（601985.SH）</strong>：中核旗下核电运营上市平台，管理秦山、田湾、福清、漳州、海南昌江、三门等核电基地（以公开资料为准）。</li>
+<li><strong>中国核电工程有限公司（中核工程）</strong>：核电工程总承包与设计单位，是本次调研中出现的<strong>低空防御、实物保护、电磁环境预警项目的核心招标人</strong>。</li>
+<li><strong>中核系采购代理/服务单位</strong>：中核（上海）供应链管理有限公司、中核第四研究设计工程有限公司、中核运维技术有限公司、北京国科军友（工程咨询）。</li>
+<li><strong>中核系相关企业</strong>：中核西仪（西安中核核仪器股份有限公司，仪控与实物保护设备）、中核二三（核工业建设）、中核汇能/新华发电（新能源）、核工业西南物理研究院、核工业二三〇/二七〇研究所等。</li>
+</ul>
+<h3>2.2 采购入口与流程</h3>
+<ul>
+<li><strong>唯一官方平台：中核集团电子采购平台（https://www.cnncecp.com）</strong>；供应商需注册并通过审核，项目报名路径为"系统功能菜单→项目管理→我要报名/非招标项目→参与项目"。</li>
+<li>采购方式：公开招标、竞争性谈判、询比采购、单一来源等；低空防御/安防类项目多通过非招标采购或谈判方式发布。</li>
+<li>第三方统计（中项网，2026-08）：中核电子采购平台挂网采购项目数量可观、同比增长约 12%，但供应商有效响应率偏低，近四成报名企业卡在注册/登录/投标环节【媒体/第三方口径，待核实】——<strong>流程门槛本身就是竞争壁垒</strong>。</li>
+</ul>
+<h3>2.3 中核低空/电磁安全采购时间线（已核实）</h3>
+<div class="tw"><table><thead><tr><th>时间</th><th>项目</th><th>采购人/招标人</th><th>内容</th><th>结果/中标人</th><th>置信度</th></tr></thead><tbody><tr><td>2017-04</td><td>核设施实物保护小型飞行器防御系统（国家能源局科研项目）</td><td>中核集团中原公司</td><td>核设施小型飞行器防御系统，接入核电站实体保卫系统，形成"地面+空中"纵深防御</td><td>通过专家评审，达国际先进水平</td><td><span class="tag fact">已证实</span>国家原子能机构/媒体</td></tr><tr><td>2021-01</td><td>核电厂电磁环境预警系统研究（HDGC-FW-GKZB-21-0146）</td><td>中国核电工程有限公司</td><td>①电磁环境预警探测传感器；②射频电磁环境分析计算软件；③敏感设备电磁干扰抗扰度；④预警系统</td><td>公开招标（结果未见公开）</td><td><span class="tag quote">采购转述</span>电力招标网</td></tr><tr><td>2024-07</td><td>基于核+北斗的取水系统安全综合管理平台无人机机巢等设备采购</td><td>中核体系单位</td><td>核+北斗、无人机机巢、安全综合管理平台</td><td>需平台注册报名</td><td><span class="tag quote">采购转述</span>公告</td></tr><tr><td>2025-05</td><td>2024-LY-0046 低空防御指挥控制设备采购</td><td>中国核电工程有限公司</td><td>低空防御指挥控制设备（陕西）</td><td>成交候选人公示（2025-09-22；据供应商页面亦为星际联盟）</td><td><span class="tag quote">采购转述</span>采招网/供应商页面</td></tr><tr><td>2025-08</td><td>2024-LY-0046 无线电侦测设备采购（hdgc-wz-gkjt-25-1261）</td><td>中国核电工程有限公司</td><td>无线电侦测设备</td><td><strong>北京星际联盟科技有限公司</strong></td><td><span class="tag quote">已证实-采购结果公告转述</span></td></tr><tr><td>2026-01</td><td>中核西仪-2025-LY-0037 实物保护系统设备采购</td><td>中核西仪</td><td>实物保护系统设备</td><td>报名截止 2026-02-04</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>2026-03/04</td><td>中核西仪-2026-LY-0002 低空探测雷达等设备采购（HDGC-XJD-26-00462）</td><td>中国核电工程有限公司（中核西仪为采购主体）</td><td>低空探测雷达等</td><td><strong>北京星际联盟科技有限公司，135 万元</strong>（2026-04-27 公示）</td><td><span class="tag quote">已证实-成交候选人公示转述</span></td></tr><tr><td>2026-07</td><td>秦山、田湾、海南、霞浦核电无人机采购</td><td>中核系核电基地</td><td>无人机（巡检/作业）</td><td>平台报名（2026-07-17 公告）</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>2025-03/06</td><td>福清核电厂海域巡检及应急处置无人机研究和应用项目（YW01-FW-GKXJ-25-1662/2114）</td><td>福清核电</td><td>海域巡检、应急处置无人机研究和应用</td><td>2025-06-24 结果公告（中标人待补）</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>2026-05</td><td>核工业二三〇研究所、二七〇研究所电磁辐射环境监测技术及基础支持服务</td><td>中核系研究所</td><td>电磁辐射环境监测技术服务</td><td>成交候选人公示</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>漳州 3/4 号机组</td><td>全厂实物保护系统入侵探测器设备采购</td><td>中国核电工程有限公司（代理：中核上海供应链）</td><td>入侵探测器等实物保护设备</td><td>公开招标</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>2026-07</td><td>核安保可视化监督联合实验室核电厂实物保护系统建模服务（NSCCG2026-021）</td><td>生态环境部核与辐射安全中心</td><td>实物保护系统建模，预算 80 万元</td><td>政府采购</td><td><span class="tag fact">已证实</span></td></tr></tbody></table></div>
+<h3>2.4 中标供应商与竞争信号</h3>
+<ul>
+<li><strong>北京星际联盟科技有限公司</strong>：2017 年大亚湾核电基地低空飞行物安全管控系统（联合验收）；2025 年 2024-LY-0046 无线电侦测设备；2026 年中核西仪低空探测雷达（135 万元）。<strong>是中核核电站低空防御领域事实上的在位者。</strong></li>
+<li><strong>历正科技</strong>：媒体文章称其在沿海某核电站低空安防系统升级招标中胜出（5 家竞标），技术卖点为强电磁环境零漏报、协议解析、精准链路干扰、不影响厂区通信；招标要求包含<strong>前期电磁环境评估/建模</strong><span class="tag media">媒体口径</span>。</li>
+<li><strong>上海航天电子通讯设备研究所</strong>：2024 年 9 月中标国核示范（国家电投石岛湾 CAP1400）低空防御系统建设采购，合同签订后 4 个月交付<span class="tag quote">采购转述</span>。</li>
+<li><strong>湖南库里斯智能科技有限公司</strong>：2026 年 8 月中选<strong>中核新疆供应链"低小慢"无人机防范设备采购</strong>（手持侦测定位 1 台、便携压制设备等）<span class="tag quote">采购转述</span>。</li>
+<li><strong>云翔科技</strong>：2026 年 7 月 5 款设备入围<strong>中核新能源电商集采平台</strong>，服务中核汇能、新华发电的低空安防【媒体/企业稿口径】。</li>
+</ul>
+<h3>2.5 对标：中广核与国核示范</h3>
+<ul>
+<li><strong>中广核大亚湾核电基地</strong>：2017 年 4 月"防范低空飞行物安全管控体系课题研究项目"通过四方联合验收（中国核能行业协会、中广核、大亚湾核电运营公司、北京星际联盟），现场放飞 3 架次大疆精灵 4 测试<span class="tag quote">已证实-媒体报道</span>。</li>
+<li><strong>中广核数科"和睦天盾"</strong>：2025 年上海交大调研报道提到其低空防御/无人机探测系统，场景包括海边核电站、岛上核电站、船上核电站【媒体/高校报道】。</li>
+<li><strong>中广核新能源</strong>：2026 年 8 月反无人机主动防御设备框架采购（要求 2023–2025 三年审计报告 + 近三年至少 1 个反无人机主动防御系统业绩）；2025-12/2026-01 内蒙古光伏电站反无人机系统集中采购<span class="tag quote">采购转述</span>。</li>
+<li><strong>国核示范（国家电投）</strong>：2024 年 8 月招标、9 月定标低空防御系统建设，上海航天电子通讯设备研究所中标<span class="tag quote">采购转述</span>。</li>
+</ul>
+<p><strong>对标结论</strong>：中广核系已出现"集团框架采购 + 核电站自研系统（数科）"的组合；国核示范走"整套系统招标 + 院所中标"路线；中核则以<strong>中核工程为核心招标人 + 中核西仪/成员单位采购 + 多基地站级采购</strong>的组合推进。三条路线都说明：这是已经启动、且会持续追加预算的市场。</p>
+<hr>
+<h2 class="sec" id="s5"><span class="no">5</span>3. 华日通讯能力全景（可服务核工业的资产盘点）</h2>
+<h3>3.1 公司概况与资质</h3>
+<ul>
+<li>成都华日通讯技术股份有限公司：2003 年注册、前身 1993 年创办；注册资本/实缴 5100 万元；法定代表人/董事长兼总经理莫舸舸；参保约 487 人（公开口径）。</li>
+<li>资质：高新技术企业、四川省"专精特新"中小企业、GJB9001C 军工质量体系、ISO9001；专利 241+、软著 80+（公开口径）。</li>
+<li>客户基础：国家无线电监测中心、省级无线电管理机构、军队、国安、民航、铁路、广电、应急、海事、卫星发射等体制内客户【公开资料/公司口径】。</li>
+</ul>
+<h3>3.2 产品线全景（六条线，均可与核工业发生关联）</h3>
+<div class="tw"><table><thead><tr><th>产品线</th><th>代表产品/能力</th><th>核工业关联</th></tr></thead><tbody><tr><td>① 无线电监测接收与监测网</td><td>R81/HRS 系列接收机、固定/移动监测站、省级平台互联互通</td><td>厂区频谱管理、电磁环境监测、核应急频谱保障</td></tr><tr><td>② 无人机侦测与低空管控</td><td>UAD-100/200/260、ZK402"猎鹰"（20MHz–8GHz、探测 ≥10km、测向 ≤2°–4° RMS、同时 ≥30 架、AOA+TDOA、协议解析）、ZK405/406/407、灵眸感知基站</td><td>核电站低空防御核心侦测层</td></tr><tr><td>③ 军政频谱/信号侦察/电子对抗</td><td>通信信号侦察、电子对抗相关产品（公开信息有限）</td><td>涉密场景，需专项尽调</td></tr><tr><td>④ 卫星互联网/卫星导航监测</td><td>国家级卫星互联网地面站频谱监测（2026-05 中标）、GNSS 干扰监测</td><td>核电授时/通信保护、卫星应用安全</td></tr><tr><td>⑤ AI 平台/频谱智脑</td><td>频谱智脑、智感慧算、智慧监测网、数据中台</td><td>多基地统一平台、电磁环境大数据与预警</td></tr><tr><td>⑥ 车载/应急/服务</td><td>监测车、重大活动保障、应急保障、咨询设计/集成/运维</td><td>核应急通信保障、演习/重大活动频谱保障</td></tr></tbody></table></div>
+<h3>3.3 标杆案例（公开可查）</h3>
+<ul>
+<li>首都机场无人机综合管控系统，<strong>连续 7 年守护首都机场及多次重大活动保障</strong>（公司口径，未见机场方公开文件）；</li>
+<li>环京"空中护城河"立体化监测管控；</li>
+<li>国家无线电监测中心一体化平台（短波/超短波）+ 省级一体化平台互联互通；</li>
+<li>2026 年 5 月中标<strong>国家级卫星互联网地面站频谱监测项目</strong>（四大地面站周边电磁环境监测、空间频谱监测与干扰举证）；</li>
+<li>2026 年 7 月与中科星图低空生态战略签约，配套近百套设备、合同超千万元（公司口径）；</li>
+<li>第 25 届环青海湖赛全程保障、直升机平台干扰排查试验、卫星导航干扰监测排查体系等。</li>
+</ul>
+<h3>3.4 反无人机方案（PDF 核心参数）</h3>
+<ul>
+<li>侦测：无线电侦测 70MHz–6GHz、低至 2dB 微弱信号、单站测向/双站 AOA 交汇定位、RID 与大疆云哨协议解析、可识别机型/SN/飞手位置；雷达（选配，5km）、光电（可见光 3–5km/热成像 1–2km）。</li>
+<li>反制：无线电干扰（手持/背负/固定）、导航诱骗、网捕、激光（5KW/10KW）、反制车（适配 M300/350 等）。</li>
+<li>平台："设备+平台+服务"：可视化、告警、黑白名单、统计分析、数据回放、设备管理、电子地图、权限管理、开放接口，可对接民航 UOM 与第三方安防平台；三级防御区（核心 0.5–1km / 警戒 1–3km / 巡视 3–5km）。</li>
+<li>服务：咨询、定制、部署、运维全生命周期；丰富的站点选址/安装/联调经验。</li>
+</ul>
+<h3>3.5 与核工业需求的匹配与缺口</h3>
+<div class="tw"><table><thead><tr><th>能力</th><th>匹配度</th><th>缺口/风险</th></tr></thead><tbody><tr><td>电磁环境本底测绘与实时预警</td><td>★★★★★</td><td>缺核电行业案例与核安全级认证；需与中核工程/设计院合作</td></tr><tr><td>低空频谱侦测/识别/定位</td><td>★★★★★</td><td>星际联盟已是中核在位者；需用参数与国产化差异化竞争</td></tr><tr><td>低空管控平台/多基地联网</td><td>★★★★</td><td>与现有实物保护系统的接口经验缺失；涉密适配待验证</td></tr><tr><td>反制硬件（干扰/诱骗/激光）</td><td>★★</td><td>法律红线（第 52 条）；建议由合规主体实施，华日做侦测与平台</td></tr><tr><td>GNSS/授时干扰监测</td><td>★★★★</td><td>需核电授时/通信场景的定制与案例</td></tr><tr><td>核应急通信保障/监测车</td><td>★★★★</td><td>需与核应急体系对接、演练验证</td></tr><tr><td>多基地统一平台/反制设备监管平台</td><td>★★★★</td><td>省内反制设备监管平台已有竞争对手（原初数据、天维讯达）</td></tr></tbody></table></div>
+<hr>
+<h2 class="sec" id="s6"><span class="no">6</span>4. 场景映射：华日如何服务中核核电站（8 个场景）</h2>
+<div class="tw"><table><thead><tr><th>场景</th><th>核电站需求</th><th>华日产品/能力</th><th>建议合作模式</th><th>优先级</th></tr></thead><tbody><tr><td>1. 厂区电磁环境本底测绘与实时预警</td><td>敏感点位电磁环境实时测量/报警、EMC 实时评估（中核工程 2021 研究项目）</td><td>接收机 + 传感器 + 频谱分析软件 + 平台</td><td>与中核工程/设计院联合投标研究课题；先做评估服务</td><td>★★★★★</td></tr><tr><td>2. 低空无人机频谱侦测与识别</td><td>复杂电磁环境下低慢小探测、识别、定位、飞手定位</td><td>UAD/ZK402/灵眸 + AOA/TDOA + 协议解析</td><td>作为侦测分包商，与反制厂商/集成商组联合体</td><td>★★★★★</td></tr><tr><td>3. 低空综合管控平台</td><td>探测→决策→处置→取证→复盘，与实物保护系统联动</td><td>低空安全管控平台、开放接口、AI 平台</td><td>平台分包或与总包方合作；争取多基地联网</td><td>★★★★</td></tr><tr><td>4. 反制处置</td><td>分级处置、最小影响、合规授权</td><td>反制产品线存在，但法律边界严格</td><td>华日做侦测/评估/监管，反制由有授权主体实施</td><td>★★★</td></tr><tr><td>5. GNSS/授时干扰监测</td><td>保护调度、通信、授时系统</td><td>卫星导航干扰监测与排查能力</td><td>与核电仪控/通信集成商合作</td><td>★★★★</td></tr><tr><td>6. 核应急通信保障</td><td>应急指挥通信、现场频谱保障</td><td>监测车 + 应急保障团队 + 频谱管理</td><td>与核应急中心/基地签约服务；参与演练</td><td>★★★★</td></tr><tr><td>7. 核材料/物流沿途保障</td><td>运输沿途低空与通信安全</td><td>车载侦测、移动监测</td><td>与运输安保单位合作</td><td>★★★</td></tr><tr><td>8. 反制设备监管平台</td><td>省级无线电管理机构监管反制设备</td><td>频谱监测 + 平台 + 数据联网</td><td>直接投标省级无线电监测站项目</td><td>★★★★</td></tr></tbody></table></div>
+<p><strong>优先级判断</strong>：场景 1 与 2 是"技术最匹配、预算已在发生"的组合；场景 8 是华日传统客户的新预算科目、竞争相对分散；场景 4 应主动回避做主责，避免法律与安全风险。</p>
+<hr>
+<h2 class="sec" id="s7"><span class="no">7</span>5. 竞争格局与华日定位</h2>
+<h3>5.1 竞争对手画像</h3>
+<div class="tw"><table><thead><tr><th>厂商</th><th>核电/能源案例</th><th>优势</th><th>对华日的威胁</th></tr></thead><tbody><tr><td>北京星际联盟</td><td>大亚湾 2017；中核 2024-LY-0046 无线电侦测设备；中核西仪低空雷达 135 万</td><td>中核在位供应商、低空雷达+侦测+系统集成、核电站案例</td><td>★★★★★（直接竞争）</td></tr><tr><td>历正科技</td><td>沿海某核电站低空安防升级（媒体口径）；抚州低空防御 245 万</td><td>协议解析/AI-RPC/AIVI、精准干扰、民营反无头部</td><td>★★★★（侦测+反制整包）</td></tr><tr><td>电科 14 所</td><td>媒体称"蜘蛛网"低空防御雷达用于某核电站</td><td>军工院所、雷达技术、品牌</td><td>★★★★（雷达层）</td></tr><tr><td>上海航天电子通讯设备研究所</td><td>国核示范低空防御系统 2024</td><td>航天院所、整套系统集成</td><td>★★★（跨集团）</td></tr><tr><td>中广核数科</td><td>"和睦天盾"低空防御系统</td><td>中广核体系内自研、核电场景理解</td><td>★★★（体系内竞争/合作）</td></tr><tr><td>云翔科技</td><td>中核新能源集采平台入围 5 款设备</td><td>中核渠道先发、导航诱骗</td><td>★★★（渠道）</td></tr><tr><td>湖南库里斯</td><td>中核新疆低小慢采购中标</td><td>中核成员单位渠道</td><td>★★（区域/设备）</td></tr></tbody></table></div>
+<h3>5.2 华日的差异化定位</h3>
+<p><strong>"核电电磁环境与低空频谱安全专家"</strong>，而不是"反无人机整包商"：</p>
+<ul>
+<li>技术差异化：频谱监测级接收机 + 2dB 微弱信号 + AOA/TDOA + 协议解析 + 全国产化 + 平台化数据能力；</li>
+<li>客户差异化：国家/省级无线电管理机构 30 年客户基础，天然承接"反制设备监管平台 + 低空频谱监管"新科目；</li>
+<li>工程差异化：首都机场 7 年 + 重大活动保障 + 监测车/应急保障，符合核电站 7×24 与应急场景；</li>
+<li>定位建议：以"侦测 + 评估 + 平台 + 运维"为主，反制交由有授权主体，既规避法律风险，也与整包商形成互补而非正面对抗。</li>
+</ul>
+<h3>5.3 主要短板</h3>
+<ol>
+<li>无核电/能源行业公开业绩（中广核框架采购硬性门槛：近三年≥1 个反无人机主动防御系统业绩）；</li>
+<li>核工业/涉密供应商资质未公开验证（需核实现有保密资质覆盖范围与核工业合格供应商资格）；</li>
+<li>缺少核安全级 EMC 认证、核安全审评经验与实物保护系统集成业绩；</li>
+<li>中核渠道空白：未在中核电子采购平台形成中标记录；</li>
+<li>公开财务数据缺失（未上市），大项目垫资与账期能力需评估。</li>
+</ol>
+<hr>
+<h2 class="sec" id="s8"><span class="no">8</span>6. 商业模式与项目量级（含估算，需谨慎使用）</h2>
+<div class="tw"><table><thead><tr><th>模式</th><th>内容</th><th>公开量级锚点</th><th>说明</th></tr></thead><tbody><tr><td>研究/评估服务</td><td>电磁环境本底调查、EMC 评估、低空安全课题</td><td>玉林红岭厂址电磁辐射源调查 5.5 万元；中核工程电磁环境预警研究（金额未公开）</td><td>金额小但能建立信任、获取场景数据</td></tr><tr><td>设备销售/分包</td><td>频谱侦测设备、接收机、传感器、监测车</td><td>星际联盟低空雷达 135 万元；历正抚州项目 245 万元</td><td>单点设备百万级，整站系统更高</td></tr><tr><td>系统集成/总包</td><td>低空综合管控系统、实物保护子系统</td><td>国核示范低空防御系统（金额未公开）</td><td>通常由集成商/院所总包，华日做子系统</td></tr><tr><td>平台/多基地</td><td>多基地统一管理、反制设备监管平台</td><td>福建/吉林监管平台（金额待核）</td><td>软件+数据+运维，粘性最强</td></tr><tr><td>运维服务</td><td>7×24 驻场/巡检/保障</td><td>行业惯例</td><td>需本地化服务网络</td></tr></tbody></table></div>
+<p><strong>估算提示</strong>：单个核电站低空防御系统的整体投资通常在数百万元级（以已公开的单雷达 135 万元、区域项目 245 万元为参照，整站含侦测+平台+部分反制可能达到千万元级）；以上为量级推测，<strong>实际以项目技术规格书与预算为准</strong>。</p>
+<hr>
+<h2 class="sec" id="s9"><span class="no">9</span>7. 进入路径与 90 天行动计划</h2>
+<h3>7.1 四条进入通道</h3>
+<ol>
+<li><strong>平台准入</strong>：完成中核集团电子采购平台供应商注册与资质审核；梳理涉密/军工/GJB 资质与核电合格供应商要求差距。</li>
+<li><strong>联合体/渠道</strong>：与中核工程系设计院、中核（上海）供应链、中核四院、北京国科军友、已有核电供应商（如星际联盟）或反制厂商建立联合体关系；以"频谱侦测/电磁评估子系统"身份参与。</li>
+<li><strong>课题先行</strong>：以中核工程 2021 年"电磁环境预警系统研究"的需求书为模板，主动申报/合作核电厂电磁环境监测科研课题或技改项目，用小项目建立案例。</li>
+<li><strong>区域+客户协同</strong>：借助连云港（田湾核电所在地）低空安防产业政策与省级无线电管理机构（反制设备监管平台）关系，推动"地方+核电+监管"三方试点。</li>
+</ol>
+<h3>7.2 90 天行动清单</h3>
+<div class="tw"><table><thead><tr><th>阶段</th><th>动作</th><th>产出/里程碑</th></tr></thead><tbody><tr><td>P0（0–30 天）</td><td>注册中核电子采购平台；完成供应商资料与资质盘点；锁定 2–3 个联合体伙伴；获取中核工程 2021 电磁环境预警研究项目完整技术规格</td><td>供应商账号 + 联合体意向 + 技术规格书</td></tr><tr><td>P1（31–60 天）</td><td>制作《核电厂电磁环境预警与低空频谱安全解决方案》（含传感器/软件/平台）；拜访中核工程、中核四院、中核上海供应链、田湾/福清等基地；申报电磁环境评估/科研课题</td><td>方案 + 拜访纪要 + 1 个课题申报</td></tr><tr><td>P2（61–90 天）</td><td>争取 1 个核电站试点（评估+侦测小规模部署）；参与省级反制设备监管平台投标；推进多基地平台方案</td><td>试点合同/中标候选 + 平台投标</td></tr></tbody></table></div>
+<h3>7.3 优先目标清单</h3>
+<ul>
+<li>客户：中国核电工程有限公司（中核工程）、秦山核电、田湾核电、福清核电、漳州核电、海南昌江核电；</li>
+<li>渠道：中核（上海）供应链、中核第四研究设计工程有限公司、中核运维技术有限公司、连云港地方政府/产业园；</li>
+<li>合作：具备反制资质与核电案例的整包商（星际联盟、历正等）、核仪控/实物保护集成商（广利核、中核西仪）。</li>
+</ul>
+<hr>
+<h2 class="sec" id="s10"><span class="no">10</span>8. 风险与合规清单</h2>
+<div class="tw"><table><thead><tr><th>类别</th><th>风险</th><th>缓释动作</th></tr></thead><tbody><tr><td>法律合规</td><td>反制设备非法拥有/使用（5–20 万罚款甚至没收）；无线电干扰影响民航/通信</td><td>华日只做侦测/评估/平台；反制由授权主体实施；部署前取得无线电管理、公安、军民航审批</td></tr><tr><td>核安全</td><td>电磁干扰影响核安全级仪控/通信；EMC 不达标</td><td>部署前电磁环境评估与隔离设计；与广利核等仪控单位共同评审</td></tr><tr><td>保密/资质</td><td>涉密供应商准入、股东穿透审查</td><td>核实现有保密资质覆盖范围；评估 PE 股东与涉密业务的兼容性</td></tr><tr><td>业绩门槛</td><td>无核电/反无人机主动防御系统业绩</td><td>先做科研/评估小项目；与在位者联合体；用机场/要地案例类比</td></tr><tr><td>竞争</td><td>星际联盟/历正/电科系已先发</td><td>差异化定位于频谱侦测+电磁评估+平台；避免整包正面对抗</td></tr><tr><td>商务</td><td>央企账期长、垫资压力、回款周期</td><td>优先平台/服务类项目；控制硬件垫资；联合体分担</td></tr><tr><td>技术</td><td>复杂电磁环境虚警、协议库覆盖、恶劣环境可靠性</td><td>用首都机场 7 年运行数据与现网测试报告证明；先试点验证</td></tr><tr><td>信息不透明</td><td>涉密项目无法公开验证金额/对手</td><td>通过采购平台公开信息、代理商访谈、联合体伙伴交叉验证</td></tr></tbody></table></div>
+<hr>
+<h2 class="sec" id="s11"><span class="no">11</span>9. 尽调与访谈问题清单</h2>
+<h3>9.1 对华日通讯管理层</h3>
+<ol>
+<li>公司保密资质、军工四证、核工业合格供应商资格的现状与覆盖范围？</li>
+<li>是否与中核系任何单位有过接触、投标或合作？为何至今无核电案例？</li>
+<li>ZK402/UAD 系列在复杂电磁环境（港口、工业区）的实测虚警率、识别率、协议库覆盖？</li>
+<li>是否愿意以"侦测/评估/平台"身份与反制厂商组联合体？愿意让出总包地位吗？</li>
+<li>对核电 EMC 标准、核安全审评流程的了解程度；是否有广利核/中核西仪等仪控伙伴？</li>
+<li>近三年低空/反无人机订单台账（客户、金额、验收、回款）与在手订单？</li>
+<li>大项目垫资能力、央企账期承受度、是否接受框架采购价格？</li>
+<li>PE 股东（九鼎系 23%）对涉密资质与股东穿透的影响？</li>
+</ol>
+<h3>9.2 对中核渠道/客户</h3>
+<ol>
+<li>中核各核电基地低空防御的现状：哪些已部署、哪些在规划？供应商评价如何？</li>
+<li>电磁环境预警系统的实际需求与预算归属（科研/技改/实物保护/信息化）？</li>
+<li>反制设备的授权与使用流程：谁审批、谁操作、与地方无线电管理机构如何协同？</li>
+<li>供应商准入清单与业绩要求；联合体投标是否被接受？</li>
+<li>试点项目的规模、周期与验收标准？是否接受先做评估/研究？</li>
+</ol>
+<hr>
+<h2 class="sec" id="s12"><span class="no">12</span>10. 结论</h2>
+<ol>
+<li><strong>中核核电站低空与电磁安全需求确定</strong>：从 2017 年科研项目到 2026 年雷达采购，需求已持续近十年且由中核工程等核心单位持续放量；切尔诺贝利事件进一步强化了紧迫性。</li>
+<li><strong>市场已有在位者</strong>：星际联盟在中核体系内形成"大亚湾系统—无线电侦测—低空雷达"的连续中标记录；历正、电科系、航天系院所分别在整包、雷达、系统集成层占据位置。华日正面整包竞争胜率低。</li>
+<li><strong>华日的真实机会是"电磁环境 + 低空频谱 + 平台"</strong>：这既是中核工程 2021 年单独招标的能力，也是历正核电站项目的硬性前置要求；华日的频谱监测技术、全国产化能力与省级客户网络在这里具备差异化。</li>
+<li><strong>建议战略</strong>：以"核电电磁环境与低空频谱安全专家"定位，联合体/分包切入，课题评估先行，先新能源与省级监管平台、后核电站本体，逐步积累业绩与资质，最终争取多基地平台与运维。</li>
+<li><strong>关键里程碑</strong>：完成中核电子采购平台准入 → 拿下 1 个电磁环境评估/科研课题 → 进入 1 个核电站试点 → 形成核电站低空频谱侦测中标记录 → 争取多基地框架采购。</li>
+</ol>
+<hr>
+<h2 class="sec" id="s13"><span class="no">13</span>附录 A：已核实采购/案例清单（速查）</h2>
+<div class="tw"><table><thead><tr><th>#</th><th>时间</th><th>单位</th><th>项目</th><th>中标/结果</th><th>置信度</th></tr></thead><tbody><tr><td>1</td><td>2017-04</td><td>中核中原公司</td><td>核设施实物保护小型飞行器防御系统</td><td>通过专家评审</td><td><span class="tag fact">已证实</span></td></tr><tr><td>2</td><td>2017-04</td><td>中广核大亚湾</td><td>防范低空飞行物安全管控体系课题</td><td>四方验收；星际联盟</td><td><span class="tag quote">已证实-媒体</span></td></tr><tr><td>3</td><td>2021-01</td><td>中国核电工程有限公司</td><td>核电厂电磁环境预警系统研究</td><td>公开招标</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>4</td><td>2024-07</td><td>中核体系</td><td>核+北斗取水系统无人机机巢等设备</td><td>平台报名</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>5</td><td>2024-08/09</td><td>国核示范（国家电投）</td><td>低空防御系统建设采购</td><td>上海航天电子通讯设备研究所</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>6</td><td>2025-05/09</td><td>中国核电工程有限公司</td><td>2024-LY-0046 低空防御指挥控制设备</td><td>星际联盟（候选人公示）</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>7</td><td>2025-08</td><td>中国核电工程有限公司</td><td>2024-LY-0046 无线电侦测设备</td><td>星际联盟</td><td><span class="tag quote">已证实-结果公告转述</span></td></tr><tr><td>8</td><td>2026-01</td><td>中核西仪</td><td>2025-LY-0037 实物保护系统设备</td><td>采购中</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>9</td><td>2026-03/04</td><td>中国核电工程有限公司/中核西仪</td><td>2026-LY-0002 低空探测雷达</td><td>星际联盟，135 万元</td><td><span class="tag quote">已证实-候选人公示</span></td></tr><tr><td>10</td><td>2026-07</td><td>中核核电基地</td><td>秦山/田湾/海南/霞浦无人机采购</td><td>平台报名</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>11</td><td>2025-03/06</td><td>福清核电</td><td>海域巡检及应急处置无人机研究</td><td>结果公告</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>12</td><td>2026-05</td><td>核工业二三〇/二七〇所</td><td>电磁辐射环境监测技术服务</td><td>成交候选人</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>13</td><td>2026-07</td><td>生态环境部核与辐射安全中心</td><td>核电厂实物保护系统建模（80 万）</td><td>政府采购</td><td><span class="tag fact">已证实</span></td></tr><tr><td>14</td><td>2026-07/08</td><td>中核新疆供应链</td><td>"低小慢"无人机防范设备</td><td>湖南库里斯</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>15</td><td>2026-08</td><td>中广核新能源科技</td><td>反无人机主动防御设备框架采购</td><td>询价中（业绩门槛）</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>16</td><td>2026-05/06</td><td>福建省无线电监测站</td><td>反制设备监管平台一期</td><td>浙江原初数据科技</td><td><span class="tag quote">采购转述</span></td></tr><tr><td>17</td><td>2025-08</td><td>吉林省</td><td>反制设备监管平台</td><td>天维讯达（北京）</td><td><span class="tag quote">采购转述</span></td></tr></tbody></table></div>
+<h2 class="sec" id="s14"><span class="no">14</span>附录 B：主要来源</h2>
+<ul>
+<li>中核集团电子采购平台（https://www.cnncecp.com）相关项目公告（经第三方平台转述）</li>
+<li>中国电力招标网/电力招标网：核电厂电磁环境预警系统研究招标公告（HDGC-FW-GKZB-21-0146，2021-01-29）</li>
+<li>机电产品招标投标电子交易平台/采招网：2024-LY-0046 低空防御指挥控制设备采购公告（2025-05-09）</li>
+<li>百度寻标宝：2024-LY-0046 无线电侦测设备结果（hdgc-wz-gkjt-25-1261；2025-08-01）、中核西仪-2026-LY-0002 低空探测雷达结果（135 万元；2026-04-27）</li>
+<li>国家原子能机构/媒体：中核中原公司《核设施实物保护小型飞行器防御系统》通过评审（2017-04）</li>
+<li>北极星核电网：大亚湾核电基地防范低空飞行物安全管控体系课题验收（2017-04）</li>
+<li>采招网/电力招标网：国核示范低空防御系统建设采购（2024-08/09）</li>
+<li>中国政府采购网/福建省政府采购网：福建省无人驾驶航空器无线电反制设备监管平台一期（2026-05/06）</li>
+<li>央视网/IAEA：切尔诺贝利核电站设施遭无人机袭击（2025-02）</li>
+<li>工信部/中国政府网：《无人驾驶航空器飞行管理暂行条例》《民用无人驾驶航空器无线电管理暂行办法》</li>
+<li>全国标准信息公共服务平台：《核电厂 仪表、控制和电力系统 电磁兼容性试验要求》编制计划</li>
+<li>工作区既有研报：《华日通讯-公司深度调研简报-20260902》《华日通讯-电磁频谱感知监测-产业深度研报-20260902》等</li>
+<li>用户提供 PDF：《面向重要区域的低空反无人机系统方案》（成都华日通讯，2026-03）</li>
+</ul>
+<p>*本报告基于 2026-09-11 前公开信息；采购项目名称/编号/金额以原公告为准，部分来自第三方平台转述，引用时建议二次核验。*</p>
+<div class="foot">华日通讯 × 中核集团核电站及重要设施 · 低空防御与电磁频谱安全研究报告<br>编制日期 2026-09-11 ｜ 单文件移动版</div>
+</div>
+<button class="btn-top" id="topBtn" aria-label="回到顶部">↑</button>
+<script>
+(function(){var b=document.getElementById('topBtn');window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>500)},{passive:true});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.querySelectorAll('.tw').forEach(function(w){if(w.scrollWidth>w.clientWidth+4)w.style.boxShadow='inset -8px 0 8px -8px rgba(16,42,58,.18)'});})();
+</script>
+</body>
+</html>
