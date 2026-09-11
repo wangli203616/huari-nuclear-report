@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>华日通讯：彭州、仁寿基地/测试厂核查备忘录</title>
+<style>
+:root{--paper:#f6f4ef;--card:#fff;--ink:#1d2733;--ink2:#45535f;--ink3:#85919b;
+--navy:#122b44;--navy2:#1b3f63;--teal:#0d5c57;--teal-soft:#e4efec;
+--gold:#a88532;--gold-soft:#f5ecd7;--line:#e5e0d6;--danger:#9d3a32;--danger-soft:#f8e8e5;
+--warn:#866013;--warn-soft:#faf1da;--ok:#2e6b45;--ok-soft:#e7f1ea}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;background:var(--paper);color:var(--ink);line-height:1.78;font-size:15.5px;padding:12px 12px 96px}
+.page{max-width:920px;margin:0 auto}
+.cover{background:linear-gradient(145deg,#0d2338,#17415f 60%,#1c5672);border-radius:20px;color:#f0f4f8;padding:32px 22px 24px;margin-bottom:18px;position:relative;overflow:hidden}
+.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.05)}
+.cover .k{display:inline-block;font-size:11.5px;letter-spacing:.14em;background:rgba(255,255,255,.13);padding:4px 12px;border-radius:999px;color:#d8e5ef;margin-bottom:14px}
+.cover h1{font-size:clamp(21px,5vw,31px);line-height:1.4;margin-bottom:10px}
+.cover .sub{font-size:13.5px;color:#bcd0df;line-height:1.7}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px}
+.toc h2{font-size:14.5px;color:var(--ink2);margin-bottom:10px}
+.toc-grid{display:grid;grid-template-columns:1fr;gap:4px}
+@media(min-width:680px){.toc-grid{grid-template-columns:1fr 1fr}}
+.toc a{font-size:13px;color:var(--navy);text-decoration:none;padding:5px 7px;border-radius:8px;line-height:1.45;display:block}
+.toc a:hover{background:var(--teal-soft)}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 16px;margin-bottom:16px}
+@media(min-width:720px){section{padding:28px 30px}}
+h1,h2,h3,h4,h5{color:var(--navy);line-height:1.45}
+h2{font-size:clamp(17px,3.6vw,21px);margin:6px 0 14px;display:flex;align-items:center;gap:9px}
+h2 .no{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 6px;border-radius:9px;background:var(--navy);color:#fff;font-size:13px}
+h3{font-size:16px;color:var(--navy2);margin:22px 0 10px}
+h3::before{content:"▍";color:var(--gold)}
+h4{font-size:14.5px;margin:14px 0 6px}
+p{margin:0 0 11px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin:5px 0}
+strong,b{color:var(--navy)}
+blockquote{border-left:4px solid var(--gold);background:var(--gold-soft);border-radius:10px;padding:12px 15px;margin:12px 0;font-size:13.5px;color:#5b4a1d}
+blockquote p{margin:2px 0}
+hr{border:none;border-top:1px dashed var(--line);margin:22px 0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;margin:12px 0 16px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:12.8px;background:#fff}
+th{background:#edf1f5;color:var(--navy);text-align:left;padding:8px 9px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 9px;border-bottom:1px solid #f0ece4;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#fbfaf7}
+.tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;margin:0 2px;white-space:nowrap}
+.tag.fact{background:var(--ok-soft);color:var(--ok)}
+.tag.media{background:var(--warn-soft);color:var(--warn)}
+.tag.quote{background:#e7eefb;color:#2c5282}
+.tag.pending{background:#f1e7f5;color:#6b3f7d}
+.callout{background:var(--teal-soft);border-left:4px solid var(--teal);border-radius:12px;padding:13px 15px;margin:13px 0}
+.foot{text-align:center;color:var(--ink3);font-size:11.5px;margin-top:18px;border-top:1px solid var(--line);padding-top:14px;line-height:1.8}
+.btn-top{position:fixed;right:14px;bottom:16px;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;border:none;font-size:19px;box-shadow:0 6px 18px rgba(16,42,58,.28);z-index:60;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.btn-top.show{opacity:1;pointer-events:auto}
+@media print{.cover,.toc,.btn-top{display:none}body{background:#fff;padding:0}section{border:none}}
+.tabs{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;background:#102a43;border-radius:14px;padding:8px;margin-bottom:14px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:none;font-size:12.5px;color:#cfe0ee;text-decoration:none;padding:7px 12px;border-radius:9px;white-space:nowrap;line-height:1.4}
+.tabs a.active{background:#e8c98b;color:#3d2e0a;font-weight:700}
+.tabs a:hover{background:rgba(255,255,255,.12)}
+.tabs a.active:hover{background:#e8c98b}
+</style>
+</head>
+<body>
+<nav class="tabs"><a href="https://wangli203616.github.io/huari-nuclear-report/">中核核工业研报</a><a href="https://wangli203616.github.io/huari-spectrum-report/shareholder.html">股东背景可视化</a><a href="https://wangli203616.github.io/huari-spectrum-report/">电磁频谱产业研报</a><a href="https://wangli203616.github.io/huari-nuclear-report/pengzhou-renshou.html" class="active">彭州仁寿基地核查</a></nav>
+<div class="page">
+<header class="cover">
+  <span class="k">深度研究报告 · 中核集团为主</span>
+  <h1>华日通讯：彭州、仁寿基地/测试厂核查备忘录</h1>
+  <div class="sub">低空防御 · 电磁频谱安全 · 核电站与重要设施 ｜ 调研日期 2026-09-11 ｜ 外部 Chrome + 官方采购平台/公告核实 ｜ 置信度标签：<span style="color:#9fd3c7">已证实</span> / <span style="color:#e8c98b">采购转述</span> / <span style="color:#f0b8b0">媒体口径</span></div>
+</header>
+<nav class="toc"><h2>📑 目录（点击跳转）</h2><div class="toc-grid"><a href="#s1">一、彭州：已证实，且项目仍在推进</a><a href="#s2">二、仁寿：公开渠道未发现华日基地/测试厂</a><a href="#s3">三、彭州基地对华日业务的意义（初步判断）</a><a href="#s4">四、主要来源</a></div></nav>
+
+<blockquote><p>核查日期：2026-09-11 ｜ 方法：外部 Chrome 检索（百度/企业信息平台/政府媒体），工作区既有研报交叉</p><p>结论前置：<strong>彭州有实锤（华日旗下子公司 + 科研生产及测试基地项目，2025–2026 仍在推进）；仁寿公开渠道未查到任何华日基地/测试厂记录，需向公司内部核实。</strong></p></blockquote>
+<hr>
+<h2 class="sec" id="s1"><span class="no">1</span>一、彭州：已证实，且项目仍在推进</h2>
+<h3>1.1 主体：成都华日智测通讯技术有限公司</h3>
+<div class="tw"><table><thead><tr><th>项目</th><th>内容</th><th>来源/置信度</th></tr></thead><tbody><tr><td>成立时间</td><td>2020-09-18</td><td>爱企查/企查查/天眼查<span class="tag fact">已证实</span></td></tr><tr><td>法定代表人</td><td>莫舸舸（华日通讯董事长兼总经理）</td><td>爱企查<span class="tag fact">已证实</span></td></tr><tr><td>注册资本</td><td>2000 万元；<strong>2026-03-26 从 500 万元增至 2000 万元（+1500 万元）</strong></td><td>企查查动态<span class="tag fact">已证实</span></td></tr><tr><td>股权</td><td>成都华日通讯技术股份有限公司 100% 持股（认缴 500 万元，增资前口径）；企业信息平台标注"华日通讯旗下企业"</td><td>爱企查对外投资<span class="tag fact">已证实</span></td></tr><tr><td>注册地址</td><td>四川省彭州市东三环路三段 999 号天府中药城创新中心 2 栋 5 楼 501 号</td><td>爱企查<span class="tag fact">已证实</span></td></tr><tr><td>曾用地址</td><td>四川省成都市彭州市丽春镇航动社区十组（2023-02-17 变更）</td><td>企查查<span class="tag fact">已证实</span></td></tr><tr><td>人员规模</td><td>少于 50 人（公开口径）</td><td>企查查【媒体/平台口径】</td></tr></tbody></table></div>
+<h3>1.2 项目：电磁频谱感知智能装备基地 / 华日智能无线电频谱感知系统装备科研生产及测试基地</h3>
+<div class="tw"><table><thead><tr><th>时间</th><th>事项</th><th>来源/置信度</th></tr></thead><tbody><tr><td>2021-08-03</td><td>"电磁频谱感知智能装备基地项目"（成都华日智测）出现在建设通等工程信息平台：<strong>用于无线电频谱管理研发中心项目建设，投产后专注于无线电频谱管理、无人机侦测管制、铁路通信监测、物联网频率监管等前沿技术领域</strong></td><td>建设通【采购/工程信息转述】</td></tr><tr><td>2022-02-25</td><td>新增行政许可：成都市彭州生态环境局关于成都华日智测通讯技术有限公司<strong>电磁频谱感知智能装备基地项目环境影响</strong>（批复）</td><td>企查查动态<span class="tag quote">已证实-平台记录</span></td></tr><tr><td>2023-02-17</td><td>企业地址变更：丽春镇航动社区 → 天府中药城创新中心</td><td>企查查动态<span class="tag fact">已证实</span></td></tr><tr><td>2025-04-15</td><td>新增行政许可</td><td>企查查动态【平台记录】</td></tr><tr><td>2025-08-03</td><td>新增行政许可：<strong>《华日智能无线电频谱感知系统装备科研生产及测试基地环境影响报告表的批复》</strong></td><td>企查查动态<span class="tag quote">已证实-平台记录</span></td></tr><tr><td>2025-12-15</td><td>四川彭州经济开发区会同相关单位<strong>前往"华日智能无线电频谱感知系统装备科研生产及测试基地"项目现场</strong>（彭州发布"周读彭州·提速攻坚立园满园"）</td><td>彭州发布<span class="tag quote">已证实-政府媒体</span></td></tr><tr><td>2026-05-31</td><td>新增行政许可：<strong>华日智能无线电频谱感知系统装备科研生产及测试基地水土保持报告书</strong></td><td>企查查动态<span class="tag quote">已证实-平台记录</span></td></tr><tr><td>2026-03-26</td><td>注册资本由 500 万元增至 2000 万元</td><td>企查查<span class="tag fact">已证实</span></td></tr></tbody></table></div>
+<h3>1.3 解读</h3>
+<ol>
+<li>彭州基地不是"传闻"，而是<strong>华日通讯通过全资子公司成都华日智测实施的正式项目</strong>，定位为无线电频谱感知系统装备的<strong>科研、生产及测试基地</strong>；</li>
+<li>2022 年已完成一次环评/许可，2025 年重新取得"科研生产及测试基地"环评批复，2026 年补办水土保持批复、注册资本大幅增资——<strong>说明项目在 2025–2026 年进入实质性推进/建设阶段</strong>；</li>
+<li>项目地址经历过"丽春镇航动社区 → 天府中药城创新中心"的变更，注册地与建设地可能分离（办公在天府中药城，生产/测试基地可能在丽春或其他园区），需以环评报告/用地文件确认；</li>
+<li>该基地的产品方向（频谱管理、无人机侦测管制、铁路通信监测、物联网频率监管）与母公司华日通讯主业完全一致，属于产能与测试能力扩建。</li>
+</ol>
+<hr>
+<h2 class="sec" id="s2"><span class="no">2</span>二、仁寿：公开渠道未发现华日基地/测试厂</h2>
+<h3>2.1 检索结论</h3>
+<ul>
+<li>华日通讯<strong>5 处分支机构</strong>（公开信息）：哈尔滨分公司、石家庄分公司、北京分公司、太原分公司、黑龙江分公司（注销）——<strong>无仁寿/眉山分支</strong>；</li>
+<li>华日通讯<strong>对外投资 4 家企业</strong>（公开信息，已知）：成都华日智测通讯技术有限公司（100%）、乌鲁木齐华聪智胜通讯技术有限公司（100%）、成都华日锦程科技开发有限公司、另 1 家（待补）——<strong>无仁寿注册主体</strong>；</li>
+<li>以"仁寿 + 华日""仁寿 + 华日智测""仁寿 + 无线电测试场""仁寿 + 通信测试"等关键词检索，<strong>未出现任何华日通讯相关的基地、测试厂、外场测试点记录</strong>；</li>
+<li>仁寿县出现的无线电相关公开信息，均为<strong>无线电管理机构查处"黑广播"</strong>（2020 年仁寿与成都高新区交界、2024 年仁寿县通信基站铁塔）等无关事件；</li>
+<li>BOSS 直聘上"眉山仁寿县视高"有通信/网络设备类小企业（0–20 人），但企业名称与华日无关（搜索结果为省略显示，未发现华日字样）。</li>
+</ul>
+<h3>2.2 可能情形（待公司核实）</h3>
+<ol>
+<li><strong>未公开的外场测试点</strong>：无线电测向/天线测试常使用租用场地或合作台站，不一定注册工商主体，公开渠道难以检索；</li>
+<li><strong>通过合作单位测试</strong>：与当地无线电监测站、高校或其他企业合作使用测试场，不构成"华日基地"；</li>
+<li><strong>信息偏差</strong>：把其他公司（如精瓷成都的彭州项目、或仁寿当地通信企业）与华日混淆；</li>
+<li><strong>规划中未落地</strong>：曾有意向选址仁寿，但未形成公开记录或已终止。</li>
+</ol>
+<h3>2.3 建议向公司核实的问题</h3>
+<ol>
+<li>仁寿是否存在华日的测试场/外场测试点？用途（天线/测向/EMC/暗室/无人机外场）？产权还是租赁？</li>
+<li>若存在，运营主体是谁（华日通讯本部/华日智测/其他子公司/合作单位）？人员编制与投资额？</li>
+<li>与彭州基地的分工：彭州做科研生产+测试，仁寿是否承担外场/暗室/环境测试？</li>
+<li>相关场地是否在环评、土地、租赁合同或政府备案中留痕？可否提供文件？</li>
+<li>彭州基地当前建设进度：一期竣工时间、投产时间、产能/测试能力、总投资额？</li>
+</ol>
+<hr>
+<h2 class="sec" id="s3"><span class="no">3</span>三、彭州基地对华日业务的意义（初步判断）</h2>
+<ol>
+<li><strong>产能与交付能力升级</strong>：从武侯区总部（研发/办公为主）扩展到彭州科研生产及测试基地，意味着华日的硬件制造、系统集成与出厂测试能力将规模化；</li>
+<li><strong>测试能力是低空/核电业务的关键</strong>：频谱侦测、测向、协议解析设备需要外场标定与复杂电磁环境验证；彭州基地的"测试"属性对核电电磁环境评估、低空防御标定具有重要意义；</li>
+<li><strong>注册资本增资 + 环评/水保批复</strong>：项目进入实质建设期的信号，可作为对客户（含中核体系）展示"产能与交付确定性"的素材；</li>
+<li><strong>待确认风险</strong>：建设进度与投产时间未公开，需核实是否按期；测试基地的具体能力（暗室/外场/无人机试飞空域）尚未披露。</li>
+</ol>
+<hr>
+<h2 class="sec" id="s4"><span class="no">4</span>四、主要来源</h2>
+<ul>
+<li>爱企查：成都华日智测通讯技术有限公司（工商信息、主要人员、对外投资）</li>
+<li>企查查：成都华日智测动态（注册资本变更 2026-03-26、行政许可 2022-02-25 / 2025-04-15 / 2025-08-03 / 2026-05-31、地址变更 2023-02-17）</li>
+<li>天眼查：成都华日通讯技术股份有限公司（分支机构、对外投资、知识产权）</li>
+<li>建设通（2021-08-03）：电磁频谱感知智能装备基地项目（成都华日智测）</li>
+<li>彭州发布（2025-12-20）："周读彭州｜提速攻坚'立园满园'"提及华日智能无线电频谱感知系统装备科研生产及测试基地项目</li>
+<li>百度检索：仁寿/华日、仁寿/华日智测、仁寿/无线电测试场等关键词（无相关结果）</li>
+<li>工信部/四川省无线电监测站/眉山市政府：仁寿县"黑广播"查处案例（用于排除误报）</li>
+</ul>
+<p>*本备忘录基于 2026-09-11 前公开信息；仁寿部分为"未检索到"，不等于"确定不存在"，最终以公司访谈与文件为准。*</p>
+<div class="foot">华日通讯 × 中核集团核电站及重要设施 · 低空防御与电磁频谱安全研究报告<br>编制日期 2026-09-11 ｜ 单文件移动版</div>
+</div>
+<button class="btn-top" id="topBtn" aria-label="回到顶部">↑</button>
+<script>
+(function(){var b=document.getElementById('topBtn');window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>500)},{passive:true});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.querySelectorAll('.tw').forEach(function(w){if(w.scrollWidth>w.clientWidth+4)w.style.boxShadow='inset -8px 0 8px -8px rgba(16,42,58,.18)'});})();
+</script>
+</body>
+</html>
