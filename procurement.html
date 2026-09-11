@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>核工业（中核 / 中广核）低空防御类采购中标明细底稿</title>
+<style>
+:root{--paper:#f6f4ef;--card:#fff;--ink:#1d2733;--ink2:#45535f;--ink3:#85919b;
+--navy:#122b44;--navy2:#1b3f63;--teal:#0d5c57;--teal-soft:#e4efec;
+--gold:#a88532;--gold-soft:#f5ecd7;--line:#e5e0d6;--danger:#9d3a32;--danger-soft:#f8e8e5;
+--warn:#866013;--warn-soft:#faf1da;--ok:#2e6b45;--ok-soft:#e7f1ea}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;background:var(--paper);color:var(--ink);line-height:1.78;font-size:15.5px;padding:12px 12px 96px}
+.page{max-width:920px;margin:0 auto}
+.cover{background:linear-gradient(145deg,#0d2338,#17415f 60%,#1c5672);border-radius:20px;color:#f0f4f8;padding:32px 22px 24px;margin-bottom:18px;position:relative;overflow:hidden}
+.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.05)}
+.cover .k{display:inline-block;font-size:11.5px;letter-spacing:.14em;background:rgba(255,255,255,.13);padding:4px 12px;border-radius:999px;color:#d8e5ef;margin-bottom:14px}
+.cover h1{font-size:clamp(21px,5vw,31px);line-height:1.4;margin-bottom:10px}
+.cover .sub{font-size:13.5px;color:#bcd0df;line-height:1.7}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px}
+.toc h2{font-size:14.5px;color:var(--ink2);margin-bottom:10px}
+.toc-grid{display:grid;grid-template-columns:1fr;gap:4px}
+@media(min-width:680px){.toc-grid{grid-template-columns:1fr 1fr}}
+.toc a{font-size:13px;color:var(--navy);text-decoration:none;padding:5px 7px;border-radius:8px;line-height:1.45;display:block}
+.toc a:hover{background:var(--teal-soft)}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 16px;margin-bottom:16px}
+@media(min-width:720px){section{padding:28px 30px}}
+h1,h2,h3,h4,h5{color:var(--navy);line-height:1.45}
+h2{font-size:clamp(17px,3.6vw,21px);margin:6px 0 14px;display:flex;align-items:center;gap:9px}
+h2 .no{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 6px;border-radius:9px;background:var(--navy);color:#fff;font-size:13px}
+h3{font-size:16px;color:var(--navy2);margin:22px 0 10px}
+h3::before{content:"▍";color:var(--gold)}
+h4{font-size:14.5px;margin:14px 0 6px}
+p{margin:0 0 11px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin:5px 0}
+strong,b{color:var(--navy)}
+blockquote{border-left:4px solid var(--gold);background:var(--gold-soft);border-radius:10px;padding:12px 15px;margin:12px 0;font-size:13.5px;color:#5b4a1d}
+blockquote p{margin:2px 0}
+hr{border:none;border-top:1px dashed var(--line);margin:22px 0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;margin:12px 0 16px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:12.8px;background:#fff}
+th{background:#edf1f5;color:var(--navy);text-align:left;padding:8px 9px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 9px;border-bottom:1px solid #f0ece4;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#fbfaf7}
+.tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;margin:0 2px;white-space:nowrap}
+.tag.fact{background:var(--ok-soft);color:var(--ok)}
+.tag.media{background:var(--warn-soft);color:var(--warn)}
+.tag.quote{background:#e7eefb;color:#2c5282}
+.tag.pending{background:#f1e7f5;color:#6b3f7d}
+.callout{background:var(--teal-soft);border-left:4px solid var(--teal);border-radius:12px;padding:13px 15px;margin:13px 0}
+.foot{text-align:center;color:var(--ink3);font-size:11.5px;margin-top:18px;border-top:1px solid var(--line);padding-top:14px;line-height:1.8}
+.btn-top{position:fixed;right:14px;bottom:16px;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;border:none;font-size:19px;box-shadow:0 6px 18px rgba(16,42,58,.28);z-index:60;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.btn-top.show{opacity:1;pointer-events:auto}
+@media print{.cover,.toc,.btn-top{display:none}body{background:#fff;padding:0}section{border:none}}
+.tabs{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;background:#102a43;border-radius:14px;padding:8px;margin-bottom:14px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:none;font-size:12.5px;color:#cfe0ee;text-decoration:none;padding:7px 12px;border-radius:9px;white-space:nowrap;line-height:1.4}
+.tabs a.active{background:#e8c98b;color:#3d2e0a;font-weight:700}
+.tabs a:hover{background:rgba(255,255,255,.12)}
+.tabs a.active:hover{background:#e8c98b}
+
+code{background:#eef1f5;color:#1b3f63;border-radius:5px;padding:1px 5px;font-size:12.5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.callout{background:var(--teal-soft);border-left:4px solid var(--teal);border-radius:12px;padding:13px 15px;margin:13px 0}
+.kpi{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0}
+@media(min-width:640px){.kpi{grid-template-columns:1fr 1fr 1fr}}
+.kpi div{background:#f7f9fb;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.kpi .v{font-size:20px;font-weight:800;color:var(--navy);line-height:1.3}
+.kpi .l{font-size:12px;color:var(--ink3);margin-top:2px}
+</style>
+</head>
+<body>
+<nav class="tabs"><a href="https://wangli203616.github.io/huari-nuclear-report/">中核核工业研报</a><a href="https://wangli203616.github.io/huari-spectrum-report/shareholder.html">股东背景可视化</a><a href="https://wangli203616.github.io/huari-spectrum-report/">电磁频谱产业研报</a><a href="https://wangli203616.github.io/huari-nuclear-report/pengzhou-renshou.html">彭州仁寿基地核查</a><a href="https://wangli203616.github.io/huari-nuclear-report/procurement.html" class="active">采购中标明细</a></nav>
+<div class="page">
+<header class="cover">
+  <span class="k">采购取证底稿 · 中核 / 中广核</span>
+  <h1>核工业（中核 / 中广核）低空防御类采购中标明细底稿</h1>
+  <div class="sub">采购方式 · 设备构成 · 中标金额 · 单价锚点 · 服务类订单 · 资质门槛 ｜ 取证日期 2026-09-11 ｜ 中广核数据为一手平台原文，中核数据来源分级标注</div>
+</header>
+<nav class="toc"><h2>📑 目录（点击跳转）</h2><div class="toc-grid"><a href="#s1">0. 一句话结论</a><a href="#s2">1. 两个平台的可得性（先说清楚取证边界）</a><a href="#s3">2. 中广核（CGN）：采购明细</a><a href="#s4">3. 中核（CNNC）：采购明细</a><a href="#s5">4. 在位者格局（谁在赚这笔钱）</a><a href="#s6">5. 价格锚点汇总（做报价和商业模式的基准）</a><a href="#s7">6. 对华日商业模式的六条直接推论</a><a href="#s8">7. 待核实清单（下一步取证）</a><a href="#s9">8. 数据可信度标注</a></div></nav>
+
+<blockquote><p>生成：2026-09-11</p><p>用途：为「华日通讯 × 核工业」商业模式设计提供采购口径、价格锚点、门槛与切入路径</p><p>规则：一手平台公告 &gt; 政府采购网 &gt; 聚合平台转录；每条标注来源可信度</p><p>关联文件：<code>华日核工业-需求与竞品素材-20260911.md</code>、<code>research_tasks/nuclear_procurement_20260911.md</code>、<code>华日通讯-核工业能力映射-深度研究报告-20260911.md</code></p></blockquote>
+<hr>
+<h2 class="sec" id="s1"><span class="no">1</span>0. 一句话结论</h2>
+<p>核工业的低空防御不是"卖一台设备"，而是<strong>卖一整套系统（含 15+ 项设备）+ 后面的维保/备件/集成服务</strong>； 单笔金额从 <strong>5.2 万元（一个通用设备包）</strong> 到 <strong>885 万元（整套系统）</strong>，主流在 <strong>45–600 万元</strong>； 采购方式在 <strong>2023 年之前以单一来源为主（先入者锁定），2025–2026 年转向询比/谈判/框架（窗口期）</strong>； 中核与中广核对供应商的<strong>业绩门槛</strong>要求方向一致——<strong>"向核电、军警、石化、边防等高可靠安全行业供过同类产品"</strong>， 这是华日目前最缺的一项。</p>
+<hr>
+<h2 class="sec" id="s2"><span class="no">2</span>1. 两个平台的可得性（先说清楚取证边界）</h2>
+<div class="tw"><table><thead><tr><th>平台</th><th>网址</th><th>可访问性</th><th>说明</th></tr></thead><tbody><tr><td>中广核电子商务平台</td><td><code>https://ecp.cgnpc.com.cn</code></td><td>✅ 公开可查、无需登录</td><td>列表 + 详情 JSON 均可直接抓；<strong>本文件的中广核数据基本为一手</strong></td></tr><tr><td>中核集团电子采购平台</td><td><code>https://www.cnncecp.com</code></td><td>❌ <strong>打不开</strong>（<code>ERR_SSL_VERSION_OR_CIPHER_MISMATCH</code>）</td><td>该站<strong>仅支持国密 TLS</strong>，Chrome / Windows schannel / curl 均无法握手；中核数据只能来自搜索引擎快照与第三方聚合，<strong>标注为待回一手核实</strong></td></tr><tr><td>中国政府采购网</td><td><code>https://www.ccgp.gov.cn</code></td><td>✅ 公开</td><td>国家核安保技术中心两项采购的一手来源</td></tr><tr><td>第三方聚合</td><td>寻标宝 / 千里马 / 采招网 / 比地 / 国家先进技术转化应用公共服务平台</td><td>部分可读</td><td>仅作发现入口，价格需交叉验证</td></tr></tbody></table></div>
+<p><strong>中广核一手检索配方（可复现）</strong></p>
+<blockquote><p>列表页：https://ecp.cgnpc.com.cn/cggg.html?Key=%25关键词%25     ← 采购公告</p><p>https://ecp.cgnpc.com.cn/zbgg.html?Key=%25关键词%25     ← 招标公告</p><p>https://ecp.cgnpc.com.cn/cgjggs.html?Key=%25关键词%25   ← 采购结果公示</p><p>https://ecp.cgnpc.com.cn/zbjggs.html?Key=%25关键词%25   ← 中标结果公示</p><p>详情正文：https://ecp.cgnpc.com.cn/detail/{dataId}/{detailId}.json</p><p>注意：Key 参数必须带 SQL LIKE 通配符 %（URL 编码为 %25），否则命中 0 条；站内 search.html 全文搜索恒为 0，不可用。</p></blockquote>
+<hr>
+<h2 class="sec" id="s3"><span class="no">3</span>2. 中广核（CGN）：采购明细</h2>
+<h3>2.1 招标文件揭示的"采购口径"（一手原文，最高价值）</h3>
+<p><strong>三澳核电 1、2 号机组低空防御系统主设备采购</strong>（编号 CGN-202404080002，2024-04-08 发布）</p>
+<div class="tw"><table><thead><tr><th>字段</th><th>原文内容</th></tr></thead><tbody><tr><td>招标人</td><td>中广核数字科技有限公司（地址：上海市闵行区紫星路1588号）</td></tr><tr><td>招标代理</td><td>中广核工程有限公司（深圳大鹏新区大亚湾核电基地BM2）</td></tr><tr><td>项目行业</td><td>机械设备</td></tr><tr><td>项目规模</td><td>为三澳核电1、2号机组采购<strong>一套</strong>低空防御系统设备</td></tr><tr><td><strong>设备构成</strong></td><td><strong>低空探测雷达、无线电侦测设备、光电复合设备、固定式电磁干扰设备</strong>等设备供货</td></tr><tr><td>招标内容</td><td>（1）软硬件供货；（2）文件资料提供；（3）现场安装调试的技术支持和指导；（4）技术培训、质量保修及售后服务</td></tr><tr><td>交货期</td><td>设备到货日期 2024-05-31</td></tr><tr><td><strong>质保期</strong></td><td><strong>自工程实际 PAC（临时竣工验收）之日起 2 年</strong></td></tr><tr><td>资质要求</td><td>无</td></tr><tr><td>财务要求</td><td>近3年（2020-2022）经审计报告 + 资产负债表/利润表/现金流量表</td></tr><tr><td><strong>业绩要求</strong></td><td>投标人或其代理的生产厂家应具有<strong>不少于一项低空防御系统项目完工业绩，且供货范围须包括低空探测雷达</strong></td></tr><tr><td>联合体</td><td><strong>不接受</strong></td></tr><tr><td>代理商</td><td>接受，但须提供【低空探测雷达、无线电侦测设备、光电复核设备】<strong>制造商出具的本项目唯一授权函</strong>；同品牌同型号重复授权则全部否决</td></tr><tr><td>招标文件售价</td><td><strong>0 元</strong></td></tr><tr><td>投标方式</td><td>全流程线上，需用数字证书加密（国密算法，RSA 证书已停用）</td></tr><tr><td>发布媒介</td><td>中广核电子商务平台 + 中国招标投标公共服务平台（cebpubservice.com）</td></tr></tbody></table></div>
+<p><strong>太平岭二期低空防御系统建设项目低空系统采购（重新招标）</strong>（编号 CGN-202309070004-N1，2023-09-28 发布）</p>
+<div class="tw"><table><thead><tr><th>字段</th><th>原文内容</th></tr></thead><tbody><tr><td>招标人</td><td>中广核数字科技有限公司（联系人 黄志云，021-23503945）</td></tr><tr><td><strong>设备构成</strong></td><td><strong>低空探测雷达、无线电侦测设备、光电复合设备、指挥控制系统</strong>等设备供货</td></tr><tr><td>招标内容</td><td>设备供货 + <strong>技术方案</strong> + 安装调试技术支持与指导 + 培训与售后</td></tr><tr><td>交货期</td><td><strong>合同签订后 15 个日历日</strong>（极短，说明是标准化产品而非定制开发）</td></tr><tr><td>质保期</td><td>PAC 起 2 年</td></tr><tr><td>业绩要求</td><td>不少于一项低空防御系统项目完工业绩（<strong>未强制要求含雷达</strong>）</td></tr><tr><td>代理商</td><td>接受，须为原厂或有【低空探测雷达、无线电侦测设备、光电复核设备】<strong>唯一原厂授权</strong></td></tr></tbody></table></div>
+<blockquote><p><strong>关键联系人</strong>：黄志云（huangzhiyun@cgnpc.com.cn）自 2019 年宁德项目起，跨 2020–2026 年持续对接低空防御品类，是中广核该品类的<strong>固定接口人</strong>。</p></blockquote>
+<h3>2.2 核电基地主系统级中标（500–600 万元级）</h3>
+<div class="tw"><table><thead><tr><th>#</th><th>公示时间</th><th>项目</th><th>招标人</th><th>中标人</th><th><strong>中标价</strong></th><th>编号</th></tr></thead><tbody><tr><td>1</td><td>2020-04-09</td><td>宁德核电低空防范系统建设项目（重新招标）</td><td>福建宁德核电有限公司</td><td>北京星际联盟科技有限公司</td><td><strong>¥6,030,000</strong></td><td>CGN-201909230002-N1</td></tr><tr><td>2</td><td>2023-12-14</td><td>太平岭二期低空防御系统建设项目低空系统采购（重新招标）</td><td>中广核数字科技有限公司</td><td>北京星际联盟科技有限公司</td><td><strong>¥5,473,600</strong></td><td>CGN-202309070004-N1</td></tr><tr><td>3</td><td>2024-06-17</td><td>三澳核电1、2号机组低空防御系统主设备采购</td><td>中广核数字科技有限公司</td><td>北京星际联盟科技有限公司</td><td><strong>¥5,043,460</strong></td><td>CGN-202404080002</td></tr></tbody></table></div>
+<p><strong>解读</strong>：跨 5 年、跨 3 个基地（宁德/太平岭/三澳），<strong>中标人始终是同一家</strong>，单项目 500–600 万元级。 采购主体从"基地公司"（2020 宁德）上收到"中广核数字科技"（2023、2024）——<strong>集团集中采购化</strong>。</p>
+<h3>2.3 分包/配套采购（说明"拆包"结构，几万到几十万级）</h3>
+<div class="tw"><table><thead><tr><th>公示时间</th><th>项目</th><th>采购单位</th><th>类别</th><th>中标人</th><th><strong>金额</strong></th></tr></thead><tbody><tr><td>2026-03-24</td><td>太平岭低空防御系统补充设备</td><td>中广核数字科技</td><td>工程</td><td>北京星际联盟</td><td><strong>¥1,372,000</strong>（直接采购，理由：需向原供应商采购）</td></tr><tr><td>2026-01-15</td><td>陆丰5·6号+太平岭1·2号实保项目低空防御系统<strong>定制类设备</strong></td><td>中广核数字科技</td><td>货物</td><td>上海晨晓电子科技</td><td><strong>¥678,495</strong></td></tr><tr><td>2025-11-20</td><td>陆丰5·6号实保项目低空防御系统<strong>信息化设备</strong></td><td>中广核数字科技</td><td>货物</td><td>北京美捷美科技</td><td><strong>¥135,995</strong></td></tr><tr><td>2025-07-28</td><td>陆丰低空防御系统<strong>光电设备</strong></td><td>中广核数字科技</td><td>货物</td><td>济南和普威视光电</td><td><strong>¥494,666</strong></td></tr><tr><td>2024-06-04</td><td>红沿河核电厂海域<strong>低空集中显示平台</strong>建设</td><td>辽宁红沿河核电</td><td>工程</td><td>中移建设</td><td><strong>¥366,823.88</strong></td></tr><tr><td>2024-05-20</td><td>三澳 LOT14A 实保项目低空防御系统<strong>定制类设备</strong></td><td>中广核数字科技</td><td>货物</td><td>上海达陆工程科技</td><td><strong>¥163,446</strong></td></tr><tr><td>2024-05-14</td><td>三澳 LOT14A 低空防御系统<strong>通用类设备</strong></td><td>中广核数字科技</td><td>货物</td><td>标段1 深圳彼途 <strong>¥92,445</strong> / 标段2 北京华通清远 <strong>¥52,330</strong> / 标段3 北京美捷美 <strong>¥178,400</strong></td></tr><tr><td>2024-04-25</td><td>三澳1·2号机组实保项目<strong>便携式干扰器</strong></td><td>中广核数字科技</td><td>货物</td><td>北京历正飞控</td><td><strong>¥84,000</strong></td></tr><tr><td>2023-09-18</td><td>太平岭二期 <strong>便携式干扰设备</strong></td><td>上海中广核工程科技</td><td>货物</td><td>上海晨晓电子科技</td><td>未公示</td></tr><tr><td>2023-09-18</td><td>太平岭二期 <strong>阵地监控及网络安全设备</strong></td><td>上海中广核工程科技</td><td>货物</td><td>北京华通清远科技</td><td>未公示</td></tr><tr><td>2023-01-04</td><td><strong>低空导航诱导设备结构件开模</strong></td><td>上海中广核工程科技</td><td>货物</td><td>上海勋迈科技</td><td>未公示</td></tr><tr><td>2025-03-10</td><td>贵州定江风电场<strong>低空测风雷达</strong></td><td>中广核贵州贵定风电</td><td>货物</td><td>安赛尔（长沙）机电</td><td><strong>¥232,828</strong></td></tr></tbody></table></div>
+<p><strong>解读</strong>：一个核电基地的低空防御系统会被拆成<strong>10 个以上采购包</strong>——主设备、定制类、通用类、信息化、光电、便携干扰器、阵地监控与网络安全、结构件开模、集中显示平台…… <strong>最小的包只有 5.2 万元</strong>。这是新进入者唯一现实的切口。</p>
+<h3>2.4 服务类采购（第二条收入线，含持续性现金流）</h3>
+<div class="tw"><table><thead><tr><th>公示时间</th><th>项目</th><th>采购单位</th><th>中标人</th><th><strong>金额</strong></th><th>类别</th></tr></thead><tbody><tr><td>2026-04-24</td><td>2026-2029年基地安保系统（<strong>武警、低空及门禁</strong>）运维服务</td><td>大亚湾核电运营管理</td><td>深圳市易盾科技</td><td><strong>¥2,364,000</strong>（3年）</td><td>服务</td></tr><tr><td>2023-04-19</td><td>2023-2026年基地安保系统（武警、低空及门禁）运维服务</td><td>大亚湾核电运营管理</td><td>深圳市易盾科技</td><td>未公示（3年）</td><td>服务</td></tr><tr><td>2024-12-10</td><td>嵊泗7#海上风电项目<strong>对低空飞行影响分析评价报告编制</strong>服务</td><td>中广核（嵊泗）新能源</td><td>江苏冉飞航空科技</td><td><strong>¥1,500,000</strong></td><td>服务</td></tr><tr><td>2023-03-29</td><td>大亚湾反无人机无线电主动防御系统<strong>对接开发</strong></td><td>上海中广核工程科技</td><td>北京星际联盟</td><td>未公示</td><td>服务</td></tr><tr><td>2023-02-23</td><td>台山基地反无人机系统<strong>对接开发服务</strong>（含对接开发、技术培训、质保及售后）</td><td>上海中广核工程科技</td><td>上海航天电子通讯设备研究所</td><td>未公示</td><td>服务</td></tr><tr><td>2023-03-27</td><td>深圳市供电局反无人机设备框架合同（含<strong>固定式设备、便携式设备、无委检测</strong>）</td><td>上海中广核工程科技</td><td>北京历正飞控</td><td>未公示</td><td>货物</td></tr></tbody></table></div>
+<blockquote><p><strong>"无委检测"</strong>（无线电管理委员会检测）出现在采购内容里——这是<strong>频谱监测/无线电管理服务</strong>在能源客户中已被采购的直接证据，与华日主营能力对口。</p></blockquote>
+<h3>2.5 反无人机专项成交全量（9 条，2023–2026）</h3>
+<div class="tw"><table><thead><tr><th>公示时间</th><th>项目</th><th>采购单位</th><th>方式</th><th>成交供应商</th><th><strong>成交价</strong></th></tr></thead><tbody><tr><td>2026-06-12</td><td>青海冷湖、锡铁山电站反无人机安全设备</td><td>青海分公司(新)</td><td>询比</td><td>安徽卫盾安全设备科技</td><td><strong>¥1,356,000</strong></td></tr><tr><td>2026-04-03</td><td>2026-2028年反无人机无线电主动防御设备采购</td><td>中广核数字科技</td><td>询比</td><td>江苏海创集成系统</td><td><strong>¥3,282,000</strong></td></tr><tr><td>2026-01-26</td><td>内蒙四合、格桑、白鹭（含明德）光伏电站反无人机主动防御系统集中采购（重新采购2）</td><td>中广核（达拉特旗）新能源</td><td>询比</td><td>安徽卫盾安全设备科技</td><td><strong>¥586,000</strong></td></tr><tr><td>2024-12-18</td><td>江西鄱阳银宝湖一期光伏电站反无人机主动防御系统</td><td>鄱阳县核博新能源</td><td>询价</td><td>星际控股集团</td><td><strong>¥548,600</strong></td></tr><tr><td>2024-09-30</td><td>辽宁九龙光伏电站反无人机系统设备</td><td>中广核太阳能（义县）南票分公司</td><td>询价</td><td>沈阳美科尔科技</td><td><strong>¥455,000</strong>（"资质合格，最低价"）</td></tr><tr><td>2023-05-10</td><td>华能沁北电厂反无人机防御系统（<strong>非中广核，对比样本</strong>）</td><td>上海中广核工程科技</td><td>单一来源</td><td>北京历正飞控</td><td>未公示</td></tr><tr><td>2023-03-29</td><td>大亚湾反无人机无线电主动防御系统对接开发</td><td>上海中广核工程科技</td><td>单一来源（功能配套性）</td><td>北京星际联盟</td><td>未公示</td></tr><tr><td>2023-03-27</td><td>深圳市供电局反无人机设备框架合同</td><td>上海中广核工程科技</td><td>单一来源（不可替代专利/专有技术）</td><td>北京历正飞控</td><td>未公示</td></tr><tr><td>2023-02-23</td><td>台山基地反无人机对接开发服务</td><td>上海中广核工程科技</td><td>单一来源（功能配套性）</td><td>上海航天电子通讯设备研究所</td><td>未公示</td></tr></tbody></table></div>
+<p><strong>三次单一来源的理由高度一致</strong>：功能配套性 / 不可替代的专利专有技术 → <strong>先入者在后续扩展中天然拿独家</strong>。</p>
+<h3>2.6 采购方式演进时间轴（窗口期证据）</h3>
+<blockquote><p>2019-09  宁德核电低空防范系统          公开招标（重新招标）</p><p>2023-02  台山 对接开发                  单一来源</p><p>2023-03  大亚湾 对接开发                单一来源</p><p>2023-03  深圳供电局 反无人机框架        单一来源</p><p>2023-09  太平岭二期 分包（干扰器/监控）  询价</p><p>2024-04  三澳 便携式干扰器              询价</p><p>2024-05  三澳 LOT14A 定制/通用类        竞争性谈判 + 询价（多标段）</p><p>2025-07  陆丰 光电设备                  谈判</p><p>2025-11  中广核数字科技 反无人机谈判公告 → 流标</p><p>2025-12  中广核数字科技 反无人机询比公告（重发）</p><p>2026-01  陆丰+太平岭 定制类设备          谈判</p><p>2026-04  中广核数字科技 2026-2028 反无人机 询比成交（328万）</p><p>2026-08  中广核（北京）新能源科技 反无人机<strong>框架采购</strong>（询比）</p><p>2026-08  江西永兴桥光储电站 无人机主动防御（询比）</p></blockquote>
+<p><strong>结论：2025Q4 起，单一来源基本消失，转为询比/谈判/框架采购——这是新供应商唯一能进的时间窗。</strong></p>
+<h3>2.7 中广核的资格门槛（按严苛度分档，均为原文）</h3>
+<p><strong>① 最友好档 — 中广核数字科技 2026-2028 反无人机无线电主动防御设备（编号 3204202500250）</strong></p>
+<ul>
+<li>资质：<strong>供货方应为设备原厂</strong>，投标文件需含原厂证明文件</li>
+<li><strong>业绩：至少一项向核电、军警、石化、边防等高可靠安全行业的同类产品供货业绩</strong></li>
+<li>财务：无特别要求｜信誉：无特别要求｜人员：无特别要求</li>
+<li>不接受联合体，<strong>不接受代理商</strong></li>
+</ul>
+<p><strong>② 中等档 — 中广核（北京）新能源科技 2026 年反无人机主动防御设备框架采购（编号 4352202600226）</strong></p>
+<ul>
+<li>财务：近三年（2023-2025）经外审财务报表，<strong>资产负债率最高值不高于 100%</strong></li>
+<li>业绩：<strong>近三年不低于 1 个反无人机主动防御系统业绩</strong>（框架合同须提供框架合同 + 订单）</li>
+<li><strong>接受代理商</strong>，不接受联合体</li>
+<li>响应截止：2026-09-02 16:30（该轮已截止，可作为下一轮模板）</li>
+</ul>
+<p><strong>③ 最严苛档 — 青海冷湖、锡铁山电站（编号 QHGS202600051）</strong></p>
+<ul>
+<li><strong>不接受联合体及代理商，不允许分包</strong></li>
+<li>必须具有 <strong>工信部《无线电发射设备型号核准证》</strong></li>
+<li>必须取得<strong>原厂授权 + 原厂售后服务承诺书（加盖制造商公章）</strong></li>
+<li>制造商须具有<strong>省级及以上保密局（或国防武器装备科研生产单位保密资格审查认证委员会）颁发的二级及以上保密资格证书</strong></li>
+<li>同时具有 <strong>中国网络安全审查技术与认证中心（CCRC）信息安全服务资质证书</strong></li>
+</ul>
+<p><strong>④ 严苛档 — 内蒙四合/格桑/白鹭集中采购（编号 NMGS202600001 / NMGS202500521）</strong></p>
+<ul>
+<li>所投产品须在 <strong>"国反恐办发【2024】13 号文"通报名单内</strong></li>
+<li>《无线电发射设备型号核准证》+ 产品检测报告 + 国家检测机构认证</li>
+<li>近 3 年（2022-2024）经审计财报（含附注）</li>
+<li><strong>近三年至少 2 项类似业绩</strong>，须附合同扫描件（合同范围/签订时间/双方盖章页）+ 最终验收证明或银行流水</li>
+<li>须在<strong>内蒙古乌海市公安局备案库</strong>内</li>
+</ul>
+<hr>
+<h2 class="sec" id="s4"><span class="no">4</span>3. 中核（CNNC）：采购明细</h2>
+<blockquote><p>⚠️ 中核集团电子采购平台仅支持国密 TLS，无法直读；以下数据来自搜索引擎快照 + 第三方聚合平台，<strong>标注为待回一手核实</strong>（核实路径见 §5）</p></blockquote>
+<h3>3.1 集团级集中采购（最早的顶层设计）</h3>
+<p><strong>低空小型飞行器入侵防御系统集中采购招标公告（2019-05-28）</strong></p>
+<ul>
+<li>项目目的（原文）："为落实对核电厂低空小型飞行器防控工作的要求，应设置低空小型飞行器入侵防御系统，通过建立<strong>低空空域管控一体化平台</strong>，实现核电周边低空小型飞行器的<strong>探测、拒止、显控</strong>以及防控系统内部的互联互通，满足<strong>多点布控、多站联网</strong>模式下的感知、识别、处置……"</li>
+<li>意义：中核早在 2019 年就以<strong>集团集中采购</strong>方式统一了核电厂低空防御的技术路线和口径。</li>
+</ul>
+<h3>3.2 核电/核设施主系统中标（大标）</h3>
+<div class="tw"><table><thead><tr><th>时间</th><th>项目</th><th>招标人</th><th>中标人</th><th><strong>金额</strong></th><th>编号</th></tr></thead><tbody><tr><td>2024-02-06 评审</td><td>示范快堆 LOT607A-低空小型飞行器入侵防御系统采购</td><td><strong>中核龙原科技有限公司</strong>（福建宁德霞浦，示范快堆业主）</td><td><strong>西安中核核仪器股份有限公司</strong></td><td><strong>¥5,702,592</strong>（投标报价 570.2592 万元）</td><td>CF-PT230341-CD21-NB01</td></tr><tr><td>2026-03/04</td><td>低空小型飞行器入侵防御系统设备（<strong>第二次</strong>）</td><td><strong>中国核电工程有限公司</strong></td><td><strong>西安中核核仪器股份有限公司</strong></td><td><strong>¥8,851,600</strong>（885.16 万元）</td><td>OT025W…（资格预审 + 公开招标）</td></tr><tr><td>2025-07-11</td><td>中核兰铀低空小型飞行器入侵防御系统采购</td><td>中核兰铀（兰州铀浓缩）</td><td>未公开（脱敏）</td><td>—</td><td>—</td></tr><tr><td>2023–2024</td><td>示范快堆 LOT602-全厂实物保护系统采购（出入口控制、入侵报警、视频探测、安保通信等）</td><td>中核龙原科技</td><td>西安中核核仪器股份有限公司</td><td>未公示</td><td>工期 2020-12-01 → 2024-06-21</td></tr><tr><td>—</td><td>中核四〇四有限公司<strong>生产监视区</strong>低空小型飞行器入侵防御系统采购</td><td>中核四〇四有限公司</td><td>—</td><td>—</td><td>404c-wz-gkzb-25-0387</td></tr></tbody></table></div>
+<p><strong>中核四〇四项目的设备口径（原文摘要，最重要的"硬件多少"证据）</strong></p>
+<blockquote><p>"Ⅱ 生产监视区低空小型飞行器入侵防御系统 <strong>1 整套，包括但不限于以下 15 项设备内容</strong>，具体内容详见技术规格书。</p><p>指挥控制系统……规格型号：综合调度各种设备完成反无人机任务，数据的保存和处理，系统时间同步；融合……"</p></blockquote>
+<ul>
+<li>招标代理：<strong>新时代工程咨询有限公司</strong></li>
+<li>解读：<strong>"1 整套 = 不少于 15 项设备"</strong>——中核对"低空防御系统"的合同标的是<strong>系统集成包</strong>，不是单品。</li>
+</ul>
+<p><strong>示范快堆 LOT607A 联系方式（一手公示原文）</strong></p>
+<ul>
+<li>联系人：孙女士，电话 0593-8709282（异议受理专线），邮箱 <strong>xpzbbgs@cnnp.com.cn</strong></li>
+<li>地址：福建省宁德市霞浦县松山街道招贤路1号核电大楼8楼</li>
+<li>项目负责人（中标方）：刘方</li>
+</ul>
+<h3>3.3 服务类采购（中核的持续性现金流明细）</h3>
+<div class="tw"><table><thead><tr><th>时间</th><th>项目</th><th>采购人</th><th>代理/招标机构</th><th>中标人</th><th><strong>金额</strong></th><th>服务期</th></tr></thead><tbody><tr><td>2025-05-23 公告 → 2025-09-08 结果</td><td><strong>秦山核电 2025-2026 年低空小型飞行器入侵防御系统维保项目</strong></td><td>秦山核电</td><td>—</td><td>未公开</td><td>—</td><td><strong>12 个月</strong>（浙江海盐）</td></tr><tr><td>2025-09-08</td><td><strong>三门核电 低空小型飞行器入侵防御系统升级和维保项目</strong></td><td>三门核电有限公司</td><td>中核（上海）供应链管理有限公司</td><td>西安中核核仪器股份有限公司</td><td>未公示</td><td>—</td></tr><tr><td>2026-07-02 公告 → 2026-08-24 候选人 → 2026-09-09 结果</td><td><strong>海南核电 低空小型飞行器入侵防御系统备件采购</strong></td><td>海南核电有限公司</td><td>中核运维技术有限公司（采购代理人）</td><td>未公开</td><td>—</td><td>备件清单制</td></tr><tr><td>2026-06-18 公告 → 2026-07-06 成交</td><td><strong>国家核安保技术中心 低空小型无人飞行器入侵防御系统硬件设备</strong></td><td>国家核安保技术中心（北京房山区长阳科技园）</td><td>北京国科军友工程咨询有限公司</td><td>上海航天电子通讯设备研究所</td><td><strong>¥943,500</strong></td><td>交货 60 日历日</td></tr><tr><td>2026-06-18 公告 → 2026-07-06 成交</td><td><strong>国家核安保技术中心 低空小型无人飞行器入侵防御系统设计与集成研制</strong></td><td>国家核安保技术中心</td><td>北京国科军友工程咨询有限公司</td><td>上海航天电子通讯设备研究所</td><td><strong>¥1,180,000+</strong>（118.xx 万，预算/限价 187 万）</td><td><strong>180 个工作日</strong></td></tr><tr><td>2021-03-16</td><td><strong>核电厂电磁环境预警系统研究</strong></td><td>中国核电工程有限公司</td><td>上海中核浦原有限公司</td><td>北京德胜华恒科技有限公司（中标候选人）</td><td>未查到</td><td>—</td></tr><tr><td>2026</td><td>核工程设备仓储管理系统建设项目（对比样本，非低空）</td><td>中国核电工程有限公司</td><td>—</td><td>中电云计算技术</td><td>¥6,200,000</td><td>—</td></tr></tbody></table></div>
+<p><strong>"国家核安保技术中心"两项采购的完整"主要标的信息"（政府采购网一手，是全库唯一给出品牌/型号/数量/单价的记录）</strong></p>
+<div class="tw"><table><thead><tr><th>序号</th><th>供应商名称</th><th>货物名称</th><th>货物品牌</th><th>货物型号</th><th>货物数量</th><th><strong>货物单价(元)</strong></th></tr></thead><tbody><tr><td>1</td><td>上海航天电子通讯设备研究所</td><td>低空小型无人飞行器入侵防御系统硬件设备</td><td>上海航天电子通讯设备研究所</td><td><strong>非标定制</strong></td><td><strong>1</strong></td><td><strong>943,500.00</strong></td></tr></tbody></table></div>
+<ul>
+<li>采购方式：竞争性谈判；预算 = 最高限价 <strong>110.04 万元</strong></li>
+<li>首次采购（2026-06-26）<strong>因递交文件的供应商不足 3 家而终止</strong>——说明该类项目<strong>竞争并不充分</strong></li>
+<li>代理服务费：<strong>1.5 万元</strong></li>
+<li>采购人联系人：谭西早，010-60336662；代理联系人：王朋 15330188728</li>
+<li>评审专家：孙小永、郭鑫、谭西早（单一来源采购人员名单口径）</li>
+</ul>
+<h3>3.4 中核"电磁环境预警"专项（与华日主营能力重合度最高）</h3>
+<ul>
+<li><strong>招标人</strong>：中国核电工程有限公司（中核集团核心设计院/工程公司）</li>
+<li><strong>招标编号</strong>：QT021JFR016C11506BD / PYGS-21HDGC000017</li>
+<li><strong>招标代理</strong>：上海中核浦原有限公司</li>
+<li><strong>公示时间</strong>：2021-03-16</li>
+<li><strong>研究内容 5 项</strong>（原文口径）：</li>
+</ul>
+<ol>
+<li>核电厂电磁环境预警探测传感器研究</li>
+<li>核电厂射频电磁环境分析计算软件</li>
+<li>核电厂敏感设备电磁干扰抗扰度性能研究</li>
+<li>核电厂电磁环境报警限值研究</li>
+<li>核电厂电磁环境预警系统开发与设计</li>
+</ol>
+<ul>
+<li><strong>项目目标（原文）</strong>："建立一套可用于核电厂的电磁环境预警系统，对核电厂敏感点位的电磁环境进行实时测量和报警，对核电厂的电磁兼容进行实时评估，以有效规避潜在风险"</li>
+<li><strong>中标候选人</strong>：北京德胜华恒科技有限公司</li>
+<li><strong>后续</strong>：中国核电工程有限公司于 <strong>2026-06-23</strong> 公布取得专利 <strong>《核电厂电磁环境综合感知预警的测控平台及测控方法》（授权公告号 CN115792440B，申请日 2022-11）</strong> —— 即<strong>业主方自己把成果专利化了</strong>。</li>
+</ul>
+<p><strong>对华日的双重含义</strong>：</p>
+<ol>
+<li>需求被验证——中核系统内确有"电磁环境实时测量 + 报警 + 分析软件"的采购科目；</li>
+<li>但成果已归业主（中国核电工程有限公司）专利，<strong>后续若再采购，招标人手里有自主专利，华日只能做配套或分包</strong>。</li>
+</ol>
+<hr>
+<h2 class="sec" id="s5"><span class="no">5</span>4. 在位者格局（谁在赚这笔钱）</h2>
+<div class="tw"><table><thead><tr><th>供应商</th><th>归属</th><th>已中标的核工业项目</th><th>公开金额合计</th></tr></thead><tbody><tr><td><strong>西安中核核仪器股份有限公司</strong></td><td>中核集团内企业</td><td>示范快堆 LOT607A（570.26万）、中国核电工程（885.16万）、三门核电升级+维保、示范快堆 LOT602 全厂实物保护</td><td><strong>≥1,455 万元</strong></td></tr><tr><td><strong>北京星际联盟科技有限公司</strong></td><td>民营</td><td>宁德核电（603万）、三澳核电（504万）、太平岭二期（547万）、太平岭补充（137.2万）、大亚湾对接开发</td><td><strong>≥1,791 万元</strong></td></tr><tr><td><strong>上海航天电子通讯设备研究所（航天八院，产品"穹盾"）</strong></td><td>航天科技集团</td><td>国家核安保技术中心硬件（94.35万）+ 设计集成研制（118万）、台山基地对接开发</td><td><strong>≥212 万元</strong></td></tr><tr><td>北京历正飞控科技有限公司</td><td>民营</td><td>三澳便携式干扰器（8.4万）、深圳市供电局反无人机框架、华能沁北电厂</td><td>≥8.4 万元</td></tr><tr><td>安徽卫盾安全设备科技有限公司</td><td>民营</td><td>青海冷湖锡铁山（135.6万）、内蒙三站（58.6万）</td><td><strong>194.2 万元</strong></td></tr><tr><td>江苏海创集成系统有限公司</td><td>民营</td><td>中广核数字科技 2026-2028（328.2万）</td><td>328.2 万元</td></tr><tr><td>深圳市易盾科技有限公司</td><td>民营</td><td>大亚湾基地安保运维两期（2023-2026、2026-2029，236.4万/期）</td><td>≥472.8 万元</td></tr><tr><td>其他分包商</td><td>—</td><td>上海晨晓、北京美捷美、济南和普威视、中移建设、上海达陆、深圳彼途、北京华通清远、上海勋迈、沈阳美科尔、星际控股</td><td>数十万至百万级</td></tr></tbody></table></div>
+<p><strong>两个关键结构性事实</strong></p>
+<ol>
+<li><strong>中核体系内"自己人"优先</strong>：西安中核核仪器（中核集团旗下）拿走中核两笔最大订单（570万 + 885万）。</li>
+<li><strong>"先入者锁定"有历史根源</strong>：<strong>北京星际联盟科技有限公司在 2017 年就是中国核能行业协会组织的"我国首套核设施低空防护验证示范系统"的总体研究建造单位</strong>，该示范系统由中国核能行业协会组织、国防科工局报道。它先攻中核体系（2017 示范→2023 台山/大亚湾），再拿下中广核三个核电基地——<strong>路径是"先用行业示范项目立标准，再复制到各基地"</strong>。</li>
+</ol>
+<p><strong>"穹盾"系统（航天八院）的公开定位</strong>（可作为产品形态对标）</p>
+<blockquote><p>"穹盾"低空小型飞行器入侵防御系统是一套以无人机"全天时、全天候、全自动"入侵防御为目标，集<strong>探测预警、监视识别、干扰打击</strong>为一体的低空安全防护评估体系。该系统通过选用<strong>模块化设备，"积木式"搭建防御体系</strong>，快速响应用户无人机防御需求。目前，"穹盾"系统已广泛应用于<strong>核电、水电、机场</strong>等领域。</p></blockquote>
+<hr>
+<h2 class="sec" id="s6"><span class="no">6</span>5. 价格锚点汇总（做报价和商业模式的基准）</h2>
+<h3>5.1 整套系统（含供货+安装调试+培训+2年质保）</h3>
+<div class="tw"><table><thead><tr><th>场景</th><th>单价区间</th><th>样本</th></tr></thead><tbody><tr><td>核电厂/核设施整套低空防御系统</td><td><strong>500 万–885 万元</strong></td><td>宁德 603万 / 太平岭 547万 / 三澳 504万 / 示范快堆 570万 / 中国核电工程 885万 / 核安保中心 94.35万（小型）</td></tr><tr><td>核电厂主设备（含雷达+无线电侦测+光电+干扰）</td><td>500 万级</td><td>三澳 504万、太平岭 547万</td></tr><tr><td>单站反无人机主动防御系统（光伏/风电场）</td><td><strong>45 万–59 万元</strong></td><td>辽宁九龙 45.5万 / 江西鄱阳 54.9万 / 内蒙三站 58.6万（一站多）</td></tr><tr><td>区域集中采购（多站）</td><td><strong>58.6 万–135.6 万元</strong></td><td>内蒙三站 58.6万 / 青海两站 135.6万</td></tr><tr><td>多年框架采购（3年）</td><td><strong>328 万元</strong></td><td>中广核数字科技 2026-2028</td></tr></tbody></table></div>
+<h3>5.2 分包设备单价锚点</h3>
+<div class="tw"><table><thead><tr><th>设备包</th><th>金额</th><th>备注</th></tr></thead><tbody><tr><td>便携式干扰器（1批）</td><td><strong>¥84,000</strong></td><td>三澳，历正飞控</td></tr><tr><td>通用类设备（单标段）</td><td><strong>¥52,330 / ¥92,445 / ¥178,400</strong></td><td>三澳 LOT14A 三个标段</td></tr><tr><td>定制类设备</td><td><strong>¥163,446 / ¥678,495</strong></td><td>三澳 / 陆丰+太平岭</td></tr><tr><td>信息化设备</td><td><strong>¥135,995</strong></td><td>陆丰</td></tr><tr><td>光电设备</td><td><strong>¥494,666</strong></td><td>陆丰，和普威视</td></tr><tr><td>低空测风雷达（单台）</td><td><strong>¥232,828</strong></td><td>贵州定江风电场</td></tr><tr><td>低空集中显示平台建设</td><td><strong>¥366,823.88</strong></td><td>红沿河</td></tr><tr><td>整套硬件（1套，非标定制）</td><td><strong>¥943,500</strong></td><td>国家核安保技术中心</td></tr></tbody></table></div>
+<h3>5.3 服务单价锚点</h3>
+<div class="tw"><table><thead><tr><th>服务类型</th><th>金额</th><th>说明</th></tr></thead><tbody><tr><td>基地安保系统（含低空）运维</td><td><strong>¥2,364,000 / 3年</strong></td><td>大亚湾，约 <strong>78.8 万元/年</strong></td></tr><tr><td>系统维保（核电基地）</td><td>未公示</td><td>秦山 12 个月、三门升级+维保</td></tr><tr><td>设计与集成研制</td><td><strong>≥¥1,180,000</strong></td><td>180 个工作日</td></tr><tr><td>低空飞行影响评价报告编制</td><td><strong>¥1,500,000</strong></td><td>嵊泗海上风电，<strong>纯服务、无硬件</strong></td></tr><tr><td>系统对接开发（含培训、质保、售后）</td><td>未公示</td><td>台山、大亚湾，单一来源</td></tr><tr><td>备件供应</td><td>未公示（清单制）</td><td>海南核电，2026</td></tr></tbody></table></div>
+<blockquote><p><strong>重要提示</strong>：以上均为<strong>中标/成交价（含供货 + 安装调试 + 技术培训 + 质保）</strong>，不等于硬件成本。除国家核安保技术中心一项外，官方公告<strong>均不公开 BOM 级单价与型号</strong>。</p></blockquote>
+<hr>
+<h2 class="sec" id="s7"><span class="no">7</span>6. 对华日商业模式的六条直接推论</h2>
+<p><strong>① 不能只卖"频谱监测设备"，要卖"低空防御系统"这个科目</strong> 中核/中广核的采购科目名称是【低空小型飞行器入侵防御系统】（中核）、【低空防御系统/低空防范系统】（中广核）。 中广核平台检索"反制"命中 0 条、"频谱"命中 0 条、"无线电"在低空类目下 0 条。 → <strong>以频谱为主打卖点直接进核电，缺乏同类采购先例；必须以低空防御为科目、把频谱/电磁能力作为技术支撑。</strong></p>
+<p><strong>② 唯一被验证、且最容易切入的窗口是"服务口"</strong> 维保、备件、对接开发、影响评价报告、设计集成研制——这些<strong>不要求"做过整套核电低空系统"的业绩门槛</strong>。 其中 <strong>嵊泗 150 万元的"低空飞行影响分析评价报告"是纯服务，无硬件</strong>，与华日"电磁环境测量 + 建模 + 报告"的能力几乎完全重合，<strong>是华日最现实的第一单形态</strong>。</p>
+<p><strong>③ 业绩门槛是华日最大的硬伤，且必须靠"非核工业客户"先破</strong> "至少一项向核电、军警、石化、边防等高可靠安全行业供过同类产品"——华日目前无核工业、能源行业公开中标记录。 → 破局路径：军警（已有）/ 边防 / 石化 / 机场 的同类业绩，<strong>任一即可满足"高可靠安全行业"口径</strong>。</p>
+<p><strong>④ 资质清单要先办齐，否则连报名资格都没有</strong></p>
+<ul>
+<li>《无线电发射设备型号核准证》（<strong>反制/干扰类产品需单独核准</strong>，监测接收机的核准不能覆盖）</li>
+<li>保密资格证书（<strong>二级及以上</strong>，省级保密局或国防武器装备科研生产单位保密资格审查认证委员会颁发）</li>
+<li>CCRC 信息安全服务资质</li>
+<li>国反恐办发【2024】13 号文通报名单（进入名单是前提，不是加分）</li>
+<li>ISO9001（基础）</li>
+<li>数字证书（中广核 ECP 需<strong>国密算法</strong>证书，办理约 5 个工作日）</li>
+</ul>
+<p><strong>⑤ 打谁：必须打到"集团侧集采主体"，不是基地业主</strong></p>
+<ul>
+<li>中广核：<strong>中广核数字科技有限公司</strong>（核电基地低空主设备）｜<strong>中广核（北京）新能源科技有限公司</strong>（风光场站框架）｜<strong>上海中广核工程科技有限公司</strong>（早期平台）｜<strong>中广核工程有限公司</strong>（招标代理）</li>
+<li>中核：<strong>中国核电工程有限公司</strong>（大标招标人）｜<strong>中核（上海）供应链管理有限公司</strong>（招标代理）｜<strong>中核运维技术有限公司</strong>（备件/运维代理）｜各基地业主（秦山、三门、海南、福清、霞浦快堆）</li>
+</ul>
+<p><strong>⑥ 时机：新建机组的 LOT14A（实物保护系统）是唯一"从零定点"的窗口</strong> 三澳、陆丰、太平岭的低空系统都是<strong>随机组工程 LOT14A 成套采购</strong>——"机组开工时就已经定点"。 正在建设/筹建的机组（金七门 1、2 号，徐圩核能供热一期，三门 5、6 号，陆丰 5、6 号，太平岭 3、4 号等）是<strong>必须提前介入的名单</strong>。</p>
+<hr>
+<h2 class="sec" id="s8"><span class="no">8</span>7. 待核实清单（下一步取证）</h2>
+<ul>
+<li>[ ] <strong>中核集团电子采购平台（cnncecp.com）国密证书访问方案</strong>——需装有国密根证书的浏览器或专用客户端，否则中核一手数据始终拿不到</li>
+<li>[ ] 中核四〇四项目（404c-wz-gkzb-25-0387）完整 15 项设备清单 + 预算 + 中标人</li>
+<li>[ ] 低空小型飞行器入侵防御系统设备（第二次，OT025W…，885.16 万）招标范围明细、资格预审门槛原文</li>
+<li>[ ] 秦山核电维保（YW01-FW-GKXJ-25-4206）与三门核电升级维保（SMHD-FW-GKZB-25-0052）的成交金额</li>
+<li>[ ] 海南核电备件采购（2026-09-09）的成交供应商、金额与备件清单（附件1《导出给厂商清单》）</li>
+<li>[ ] 中核 2019 年集中采购的中标人、单价与框架协议内容</li>
+<li>[ ] 中核龙原 LOT607A 的技术规格书（含设备清单/数量/技术要求）</li>
+<li>[ ] 华日通讯是否已持有《无线电发射设备型号核准证》、保密资质等级、CCRC 资质、是否在国反恐办名单内</li>
+<li>[ ] 华日通讯在军警/边防/石化/机场领域的已完工合同（用于满足"高可靠安全行业业绩"条款）</li>
+<li>[ ] 中广核 ECP 会员注册状态与国密数字证书持有情况</li>
+</ul>
+<hr>
+<h2 class="sec" id="s9"><span class="no">9</span>8. 数据可信度标注</h2>
+<div class="tw"><table><thead><tr><th>数据块</th><th>可信度</th><th>依据</th></tr></thead><tbody><tr><td>中广核全部金额、编号、正文</td><td><strong><span class="tag quote">已证实-一手</span></strong></td><td>ecp.cgnpc.com.cn 官方公示 + 详情 JSON 原文</td></tr><tr><td>招标文件设备构成、质保期、交货期、门槛</td><td><strong><span class="tag quote">已证实-一手</span></strong></td><td>招标公告 PDF 正文（本次抓取）</td></tr><tr><td>中核 示范快堆 LOT607A（570.2592万）</td><td><strong><span class="tag quote">已证实-二手转录</span></strong></td><td>雪球转载的中标候选人公示全文，含项目编号/联系人/邮箱，字段完整，可信度高；建议回中核平台核实</td></tr><tr><td>中核 中国核电工程 885.16 万</td><td><strong><span class="tag quote">待核实-聚合平台</span></strong></td><td>寻标宝摘要，含招标人/代理/中标人/金额，但未见官方 PDF</td></tr><tr><td>中核 国家核安保技术中心两项</td><td><strong><span class="tag quote">已证实-一手</span></strong></td><td>中国政府采购网成交公告全文（含品牌/型号/数量/单价）</td></tr><tr><td>中核 秦山/三门/海南 服务类</td><td><strong>【部分证实】</strong></td><td>项目编号、名称、期限、采购代理可查；金额未公开</td></tr><tr><td>中核 电磁环境预警系统研究（2021）</td><td><strong><span class="tag quote">已证实-二手</span></strong></td><td>中标候选人公示标题与编号可查；金额未查到</td></tr><tr><td>"穹盾"产品定位</td><td><strong>【企业/媒体自述】</strong></td><td>新民晚报 2024-09-24</td></tr><tr><td>星际联盟 2017 示范系统</td><td><strong><span class="tag quote">已证实-政府网站</span></strong></td><td>国家国防科技工业局、国家原子能机构报道</td></tr></tbody></table></div>
+<div class="foot">华日通讯 × 核工业 · 采购中标明细取证底稿<br>编制日期 2026-09-11 ｜ 单文件移动版 ｜ 数据来源见文末可信度标注</div>
+</div>
+<button class="btn-top" id="topBtn" aria-label="回到顶部">↑</button>
+<script>
+(function(){var b=document.getElementById('topBtn');window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>500)},{passive:true});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.querySelectorAll('.tw').forEach(function(w){if(w.scrollWidth>w.clientWidth+4)w.style.boxShadow='inset -8px 0 8px -8px rgba(16,42,58,.18)'});})();
+</script>
+</body>
+</html>
