@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>成都海光：中核体系最现实的一根"接口"</title>
+<style>
+:root{--paper:#f6f4ef;--card:#fff;--ink:#1d2733;--ink2:#45535f;--ink3:#85919b;
+--navy:#122b44;--navy2:#1b3f63;--teal:#0d5c57;--teal-soft:#e4efec;
+--gold:#a88532;--gold-soft:#f5ecd7;--line:#e5e0d6;--danger:#9d3a32;--danger-soft:#f8e8e5;
+--warn:#866013;--warn-soft:#faf1da;--ok:#2e6b45;--ok-soft:#e7f1ea}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;background:var(--paper);color:var(--ink);line-height:1.78;font-size:15.5px;padding:12px 12px 96px}
+.page{max-width:920px;margin:0 auto}
+.cover{background:linear-gradient(145deg,#0d2338,#17415f 60%,#1c5672);border-radius:20px;color:#f0f4f8;padding:32px 22px 24px;margin-bottom:18px;position:relative;overflow:hidden}
+.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.05)}
+.cover .k{display:inline-block;font-size:11.5px;letter-spacing:.14em;background:rgba(255,255,255,.13);padding:4px 12px;border-radius:999px;color:#d8e5ef;margin-bottom:14px}
+.cover h1{font-size:clamp(21px,5vw,31px);line-height:1.4;margin-bottom:10px}
+.cover .sub{font-size:13.5px;color:#bcd0df;line-height:1.7}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px}
+.toc h2{font-size:14.5px;color:var(--ink2);margin-bottom:10px}
+.toc-grid{display:grid;grid-template-columns:1fr;gap:4px}
+@media(min-width:680px){.toc-grid{grid-template-columns:1fr 1fr}}
+.toc a{font-size:13px;color:var(--navy);text-decoration:none;padding:5px 7px;border-radius:8px;line-height:1.45;display:block}
+.toc a:hover{background:var(--teal-soft)}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 16px;margin-bottom:16px}
+@media(min-width:720px){section{padding:28px 30px}}
+h1,h2,h3,h4,h5{color:var(--navy);line-height:1.45}
+h2{font-size:clamp(17px,3.6vw,21px);margin:6px 0 14px;display:flex;align-items:center;gap:9px}
+h2 .no{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 6px;border-radius:9px;background:var(--navy);color:#fff;font-size:13px}
+h3{font-size:16px;color:var(--navy2);margin:22px 0 10px}
+h3::before{content:"▍";color:var(--gold)}
+h4{font-size:14.5px;margin:14px 0 6px}
+p{margin:0 0 11px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin:5px 0}
+strong,b{color:var(--navy)}
+blockquote{border-left:4px solid var(--gold);background:var(--gold-soft);border-radius:10px;padding:12px 15px;margin:12px 0;font-size:13.5px;color:#5b4a1d}
+blockquote p{margin:2px 0}
+hr{border:none;border-top:1px dashed var(--line);margin:22px 0}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px;margin:12px 0 16px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:12.8px;background:#fff}
+th{background:#edf1f5;color:var(--navy);text-align:left;padding:8px 9px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 9px;border-bottom:1px solid #f0ece4;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#fbfaf7}
+.tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;margin:0 2px;white-space:nowrap}
+.tag.fact{background:var(--ok-soft);color:var(--ok)}
+.tag.media{background:var(--warn-soft);color:var(--warn)}
+.tag.quote{background:#e7eefb;color:#2c5282}
+.tag.pending{background:#f1e7f5;color:#6b3f7d}
+.callout{background:var(--teal-soft);border-left:4px solid var(--teal);border-radius:12px;padding:13px 15px;margin:13px 0}
+.foot{text-align:center;color:var(--ink3);font-size:11.5px;margin-top:18px;border-top:1px solid var(--line);padding-top:14px;line-height:1.8}
+.btn-top{position:fixed;right:14px;bottom:16px;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;border:none;font-size:19px;box-shadow:0 6px 18px rgba(16,42,58,.28);z-index:60;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.btn-top.show{opacity:1;pointer-events:auto}
+@media print{.cover,.toc,.btn-top{display:none}body{background:#fff;padding:0}section{border:none}}
+.tabs{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;background:#102a43;border-radius:14px;padding:8px;margin-bottom:14px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:none;font-size:12.5px;color:#cfe0ee;text-decoration:none;padding:7px 12px;border-radius:9px;white-space:nowrap;line-height:1.4}
+.tabs a.active{background:#e8c98b;color:#3d2e0a;font-weight:700}
+.tabs a:hover{background:rgba(255,255,255,.12)}
+.tabs a.active:hover{background:#e8c98b}
+
+code{background:#eef1f5;color:#1b3f63;border-radius:5px;padding:1px 5px;font-size:12.5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+blockquote code{background:rgba(255,255,255,.6)}
+</style>
+<style>
+/* ===== 手机端导航换行（2026-09-14） ===== */
+@media (max-width:760px){
+  .tabs,.hrtabs{flex-wrap:wrap;overflow-x:visible;-webkit-overflow-scrolling:auto}
+  .tabs a,.hrtabs a{flex:0 1 auto}
+}
+</style>
+<style>
+/* ===== 手机端表格适配（2026-09-14）：不再依赖横向滑动 ===== */
+html{overflow-x:hidden}
+body{overflow-x:hidden;max-width:100%}
+.tw{max-width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-x pan-y}
+.tw table{max-width:100%}
+@media (max-width:760px){
+  .tw{overflow:visible;border:none;border-radius:0;margin:10px 0 6px}
+  .tw table{min-width:0!important;width:100%!important;font-size:13px;background:transparent;border-collapse:separate;border-spacing:0}
+  .tw thead{display:none}
+  .tw tbody tr{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:10px;box-shadow:0 1px 2px rgba(16,42,58,.04)}
+  .tw tbody tr:nth-child(even) td,.tw tbody tr:nth-child(even){background:transparent}
+  .tw tbody td{display:block;width:auto!important;border:none!important;padding:5px 0;background:transparent!important;font-size:13px;line-height:1.66;white-space:normal!important;word-break:break-word;overflow-wrap:anywhere}
+  .tw tbody td+td{border-top:1px dashed #efeae1!important;padding-top:7px;margin-top:2px}
+  .tw tbody td::before{content:attr(data-label);display:block;font-size:10.5px;font-weight:700;letter-spacing:.06em;color:var(--ink3);margin-bottom:2px}
+  .tw tbody td[data-label=""]::before,.tw tbody td:not([data-label])::before{display:none}
+  .tw br{display:none}
+}
+</style>
+</head>
+<body>
+<nav class="tabs"><a href="https://wangli203616.github.io/huari-nuclear-report/">中核核工业研报</a><a href="https://wangli203616.github.io/huari-spectrum-report/shareholder.html">股东背景可视化</a><a href="https://wangli203616.github.io/huari-spectrum-report/">电磁频谱产业研报</a><a href="https://wangli203616.github.io/huari-nuclear-report/pengzhou-renshou.html">彭州仁寿基地核查</a><a href="https://wangli203616.github.io/huari-nuclear-report/procurement.html">采购中标明细</a><a href="https://wangli203616.github.io/huari-nuclear-report/solution.html">整体解决方案</a><a href="https://wangli203616.github.io/huari-nuclear-report/haiguang.html" class="active">成都海光切入路径</a></nav>
+<div class="page">
+<header class="cover">
+  <span class="k">中核体系切入路径 · 第 7 页</span>
+  <h1>成都海光：中核体系最现实的一根"接口"</h1>
+  <div class="sub">成都海光公司深研（主体/股权/资质/采购制度）｜七个业务结合点｜中核内部三阶段渗透路径与扩散矩阵｜价格锚与报价原则｜风险反制｜尽调待核清单 ｜ 编制日期 2026-09-16</div>
+</header>
+<nav class="toc"><h2>📑 目录（点击跳转）</h2><div class="toc-grid"><a href="#s1">公司深研 + 华日切入与中核内部渗透路径设计</a><a href="#s2">0. 一页结论</a><a href="#s3">1. 主体底账</a><a href="#s4">2. 用户提供的三条沿革：公开渠道核验结果</a><a href="#s5">3. 它到底做什么</a><a href="#s6">4. 它在生态里的坐标</a><a href="#s7">4.5 一手回验：海光在中广核体系内的采购记录（2026-09-16 实测）</a><a href="#s8">5. 资质家底与真实能力边界</a><a href="#s9">6. 两个关键制度发现（决定怎么走）</a><a href="#s10">7. 华日 × 海光：七个结合点（按首单概率排序）</a><a href="#s11">8. 中核内部渗透路径：三阶段 + 扩散矩阵</a><a href="#s12">9. 商业模型与价格锚</a><a href="#s13">10. 首次接触一页纸</a><a href="#s14">11. 风险与反制</a><a href="#s15">12. 待核清单</a><a href="#s16">附：来源与可信度</a></div></nav>
+
+<h2 class="sec" id="s1"><span class="no">1</span>公司深研 + 华日切入与中核内部渗透路径设计</h2>
+<blockquote><p>编制：2026-09-16</p><p>方法：deep-research 三路子代理并行取证 + web-access（Chrome CDP 与 curl／聚合平台交叉验证）</p><p>标注规则：【一手】= 政府／官方平台原文；【二手】= 聚合平台或媒体转录，需回一手核实；【推断】= 分析判断</p><p>关联底稿：<code>调研底稿\20260916-海光-A-公司主体.md</code>、<code>调研底稿\20260916-海光-B-业务与业绩.md</code>、<code>成都海光-深度调研与华日结合方案-20260916.md</code>、<code>华日通讯-核工业能力映射-深度研究报告-20260911.md</code>、<code>华日通讯-核工业采购中标-明细底稿-20260911.md</code>、<code>华日通讯-核工业整体解决方案与采购价值构成-20260914.md</code></p></blockquote>
+<hr>
+<h2 class="sec" id="s2"><span class="no">2</span>0. 一页结论</h2>
+<p><strong>1. 主体清楚。</strong> 成都海光核电技术服务有限公司是<strong>中国核动力研究设计院 100% 直接持股</strong>的一人有限公司，最终归属中核集团；注册资本与实缴均 5000 万元；1993 年成立，前身"中国核动力研究设计院成都大华科技开发公司"，2013 年经中核集团批准改制更名。【二手-多平台字段一致】</p>
+<p><strong>2. 它不是业主，但它是"能进核岛的人"。</strong> 主业为核岛日常维修、换料大修、工程改造与物项替代、机电安装、无损检验、计量检定、性能试验、技术文档与通用技术服务；在大亚湾、岭澳、秦山、阳江、台山、防城港、田湾、三门、红沿河、宁德、福清设有分公司或项目部。</p>
+<p><strong>3. 它有法定的"集成供货"资格。</strong> 经营范围明确包含"维修工程技术改造项目（系统及设备）的研发与设计、集成供货和工程实施"，以及"人工智能行业应用系统集成服务""软件开发""货物进出口""电气机械设备销售"。这是华日的设备与服务能被合法装进它合同的入口。【二手-工商登记】</p>
+<p><strong>4. 它自己就是采购人。</strong> 采购走 <code>HGJF-{FW|GC|WZ}-{GKXJ|GKJT}-年份-流水号</code> 的公开询价／公开竞谈，门槛低于电厂主体招标，采购品类已覆盖系统平台（超融合）、智能防异物系统、无损检测服务、材料框架、人力外包。【二手-项目编号完整】</p>
+<p><strong>5. 但中核侧真正的门口不是它。</strong> 中国核电系统的大修设备维护、备件、运维类采购已收口到<strong>中核运维技术有限公司</strong>（2023-09 杭州设立，中国核电控股）。海光在中广核基地的入口价值，高于它在中核基地的入口价值。【一手-采购代理记录 + 二手】</p>
+<p><strong>6. 第一个结合点不是反无人机总包，而是"大修期频谱与电磁环境保障"。</strong> 零硬件或轻硬件、纯智力交付、单笔几十万级、不触碰反制设备合规、不需要核电整包业绩，且与它既有的计量检定／性能试验／技术支持外委业务线同构。【推断，价格锚见 §9】</p>
+<p><strong>7. 行动一句话：把成都海光当作"我们在中核体系里的第一个客户"，而不是代理商。</strong> 先做出一份它敢卖、也卖得出去的服务，再谈设备供货，最后才是联合体投标。【推断】</p>
+<p><strong>8. 补一条 2026-09-16 的一手回验，这是本次最有商业价值的一条：海光在中广核体系内是"有效供应商有且仅有 1 家"级别的存在。</strong> 中广核电子商务平台原文显示，它的多份合同走<strong>单一来源／直接采购</strong>，覆盖面横跨<strong>中广核核电运营有限公司（群厂层面）</strong>、阳江核电、辽宁红沿河核电三层；其中"群厂大修设备维护保养合同"的服务期是 <strong>2025—2029 年</strong>。详见 §4.5。【一手】</p>
+<hr>
+<h2 class="sec" id="s3"><span class="no">3</span>1. 主体底账</h2>
+<div class="tw"><table><thead><tr><th>项目</th><th>内容</th><th>标注</th></tr></thead><tbody><tr><td data-label="项目">企业全称</td><td data-label="内容">成都海光核电技术服务有限公司</td><td data-label="标注">【二手】多平台一致</td></tr><tr><td data-label="项目">统一社会信用代码</td><td data-label="内容">91510122633103288U</td><td data-label="标注">【二手】企查查／天眼查／建设通三处一致</td></tr><tr><td data-label="项目">成立日期</td><td data-label="内容">1993-04-01</td><td data-label="标注">【二手】多平台一致</td></tr><tr><td data-label="项目">曾用名</td><td data-label="内容">中国核动力研究设计院成都大华科技开发公司（历史名称止于 2013-11-21）</td><td data-label="标注">【二手】</td></tr><tr><td data-label="项目">注册资本</td><td data-label="内容">5000 万元人民币</td><td data-label="标注">【二手】部分第三方页面仍显示 1200 万元，疑为增资前口径</td></tr><tr><td data-label="项目">实缴资本</td><td data-label="内容">5000 万元，实缴到账日 2022-12-22</td><td data-label="标注">【二手】</td></tr><tr><td data-label="项目">企业类型</td><td data-label="内容">有限责任公司（非自然人投资或控股的法人独资）</td><td data-label="标注">【二手】</td></tr><tr><td data-label="项目">唯一股东</td><td data-label="内容">中国核动力研究设计院（事业法人，事证第110000000521号），100% 直接持股</td><td data-label="标注">【二手-字段级】</td></tr><tr><td data-label="项目">最终控制人</td><td data-label="内容">中国核工业集团有限公司（中核集团）</td><td data-label="标注">【推断-依据持股链】</td></tr><tr><td data-label="项目">法定代表人／经理</td><td data-label="内容">陈文</td><td data-label="标注">【二手】时效性待复核</td></tr><tr><td data-label="项目">董事长</td><td data-label="内容">杨俊辉</td><td data-label="标注">【二手】</td></tr><tr><td data-label="项目">其他董事</td><td data-label="内容">司蔓蔓、张国平、李斌</td><td data-label="标注">【二手】</td></tr><tr><td data-label="项目">注册地址</td><td data-label="内容">成都市双流区怡心街道长顺大道一段 328 号</td><td data-label="标注">【二手】</td></tr><tr><td data-label="项目">登记机关／状态</td><td data-label="内容">成都市双流区市场监督管理局／存续</td><td data-label="标注">【二手】</td></tr><tr><td data-label="项目">参保人数</td><td data-label="内容">1457（2025 年报）／1596（2024）／1758（2023），<strong>连续三年下降</strong></td><td data-label="标注">【二手-工商年报口径】</td></tr><tr><td data-label="项目">人员规模（企业自述）</td><td data-label="内容">2600 余人；另有"员工 2000 余人""1700 余人"等口径</td><td data-label="标注">【二手-公司简介】与参保口径差异大，须当面核实</td></tr><tr><td data-label="项目">分公司</td><td data-label="内容">华东分公司（2021-12-09，连云港）、深圳分公司（2014-08-08，大亚湾）</td><td data-label="标注">【二手】</td></tr><tr><td data-label="项目">官网</td><td data-label="内容">www.cdhaiguang.com 实测无法访问（502／无响应）</td><td data-label="标注">【一手-2026-09-16 实测】</td></tr></tbody></table></div>
+<p><strong>三个必须解释清楚的口径差</strong>（建议留到商务接触时当面问）：</p>
+<ol>
+<li>参保 1457 人 vs 企业自述 2600 余人 —— 差异多半来自劳务派遣、项目制用工、外包队伍是否计入；这直接决定它的自有技术力量有多厚。</li>
+<li>成立时间 1993 年（工商）vs 行业报道中的 2011 年 —— 后者可能指的是核电检修业务并入的时间点。</li>
+<li>注册资本 5000 万 vs 旧口径 1200 万 —— 2022 年增资。</li>
+</ol>
+<hr>
+<h2 class="sec" id="s4"><span class="no">4</span>2. 用户提供的三条沿革：公开渠道核验结果</h2>
+<p>用户给出的三条沿革为：2011-01-01 核动力院反应堆运行与运用研究所核电检修业务并入；2012-01-01 四川核动力机电安装工程有限公司关闭、业务并入；2014-08-01 核动力院科技开发公司（成立于 90 年代，1993 年起承做深圳大亚湾通用技术服务）业务整合并入。</p>
+<p><strong>核验结论：三条均未在公开渠道找到可引用的独立来源；但它们与工商信息并不必然冲突。</strong></p>
+<ul>
+<li>公开可证实的只有一条线：公司前身是"核动力院成都大华科技开发公司"，1993-04-01 成立，2013 年改制更名。【二手】</li>
+<li>1993 年这个年份，在"大华科技开发公司成立"与"科技开发公司开始承接大亚湾通用技术服务"两条线索上重合，说明这批业务的起点确实在 90 年代初。</li>
+<li>三条"并入"更可能发生在<strong>资产与业务层面</strong>（院属单位关闭／整合），而不一定在工商登记上留下痕迹，所以查不到属于正常。</li>
+</ul>
+<p><strong>处理建议</strong>：不要把它当成待核实的历史包袱，而是当成<strong>最好的第一次接触话题</strong>——"贵司 2011／2012／2014 三次整合的脉络，我们想听您讲一遍"。这比递名片有效得多。【推断】</p>
+<hr>
+<h2 class="sec" id="s5"><span class="no">5</span>3. 它到底做什么</h2>
+<h3>3.1 五条业务线</h3>
+<div class="tw"><table><thead><tr><th>业务线</th><th>内容</th><th>与华日的关系</th></tr></thead><tbody><tr><td data-label="业务线">核岛日常维修与换料大修</td><td data-label="内容">核心主业，人力密集，随大修周期波动</td><td data-label="与华日的关系">大修期现场保障是我们的切入口</td></tr><tr><td data-label="业务线">工程改造与技术升级</td><td data-label="内容">系统改造设计、物项替代、施工实施</td><td data-label="与华日的关系">改造包里的"通信与频谱子系统"可分包</td></tr><tr><td data-label="业务线">机电安装与工程实施</td><td data-label="内容">安装、调试、辅助工程</td><td data-label="与华日的关系">我们进场作业的依托</td></tr><tr><td data-label="业务线">技术支持与技术服务</td><td data-label="内容">设备管理、性能试验、计量检定、技术文档、通用技术服务</td><td data-label="与华日的关系"><strong>同构度最高，最容易被搭进去</strong></td></tr><tr><td data-label="业务线">检测与试验</td><td data-label="内容">民用核安全设备无损检验、仪器仪表修理</td><td data-label="与华日的关系">与我们的电磁测量／EMC 评估互补而非重叠</td></tr></tbody></table></div>
+<h3>3.2 基地网络</h3>
+<p>分公司 2 家（华东-连云港、深圳-大亚湾），项目部覆盖：大亚湾、岭澳、秦山、阳江、台山、防城港、田湾、三门、红沿河、宁德、福清。【二手-公司简介／校招简章】</p>
+<p><strong>口径提示</strong>：这是"企业自述"的站点清单，驻场人数与常设与否需核实。但方向是明确的：<strong>打通总部一层，理论上能一次性触及广东、江苏、福建、辽宁、浙江五省核电基地现场。</strong></p>
+<h3>3.3 客户结构跨三大集团</h3>
+<p>中核（秦山、霞浦、田湾）、中广核（大亚湾、岭澳、防城港、红沿河、阳江、台山、宁德）、华能（海南昌江）都在给它下单。【二手-中标摘要，待回一手】</p>
+<hr>
+<h2 class="sec" id="s6"><span class="no">6</span>4. 它在生态里的坐标</h2>
+<p><strong>① 红沿河基地"战略合作伙伴"三家之一</strong>——另两家是中核检修、清河检修；它是其中<strong>唯一的中广核体系外单位</strong>。这意味着中广核业主已经正式承认它的跨体系运维能力。【二手-红沿河核电通稿经转载】</p>
+<p><strong>② 集团内它有一个强对手：中核检修有限公司</strong>（中国核工业建设股份旗下，专精特新"小巨人"）。海光要在集团内争资源，就必须有自己的差异化技术标签——它 2025 年拿到国家高新技术企业认定，正好印证了这个动机。【一手-高企备案名单 + 推断】</p>
+<p><strong>③ 它是总包，也是分包方</strong>：它自己作为招标人发布过《福清核电大修技术支持项目》等采购，也存在把劳务、装置安装、检测服务再发包出去的行为。【二手-招标公告标题完整】</p>
+<p><strong>④ 它的系统集成能力偏弱</strong>：2025 年四川某单位测控系统项目，它排第 12 名未中标。【二手】——这条是<strong>利好我们的证据</strong>：它需要技术伙伴，而不是要替代技术伙伴。</p>
+<hr>
+<h2 class="sec" id="s7"><span class="no">7</span>4.5 一手回验：海光在中广核体系内的采购记录（2026-09-16 实测）</h2>
+<p>来源：中广核电子商务平台「采购结果公示」列表与明细 JSON（检索词 <code>%海光%</code>），共命中 13 条，剔除"国产海光芯片"等同名干扰后，与成都海光直接相关的记录如下。</p>
+<div class="tw"><table><thead><tr><th>公示日期</th><th>项目名称</th><th>采购单位</th><th>采购方式</th><th>成交报价</th></tr></thead><tbody><tr><td data-label="公示日期">2026-08-31</td><td data-label="项目名称">2023-2027 年群厂大修设备维修保养的<strong>后勤服务补充合同</strong>（成都海光）</td><td data-label="采购单位"><strong>中广核核电运营有限公司</strong></td><td data-label="采购方式">直接采购（原因："有效供应商有且仅有 1 家"）</td><td data-label="成交报价"><strong>860,200 元</strong></td></tr><tr><td data-label="公示日期">2025-01-17</td><td data-label="项目名称">2025-2027 年<strong>大修业绩共享激励协议</strong>（成都海光）</td><td data-label="采购单位">阳江核电有限公司</td><td data-label="采购方式">直接采购</td><td data-label="成交报价"><strong>3,024,000 元</strong></td></tr><tr><td data-label="公示日期">2024-12-20</td><td data-label="项目名称">2025-2027 年<strong>战略合作激励协议</strong>（成都海光）</td><td data-label="采购单位">阳江核电有限公司</td><td data-label="采购方式">单一来源</td><td data-label="成交报价"><strong>220,000 元</strong></td></tr><tr><td data-label="公示日期">2024-12-18</td><td data-label="项目名称"><strong>群厂大修设备维护保养合同</strong>（成都海光）</td><td data-label="采购单位">中广核核电运营有限公司</td><td data-label="采购方式">单一来源</td><td data-label="成交报价">未公示（内容为 <strong>2025-2029 年</strong>群厂大修设备维护保养服务）</td></tr><tr><td data-label="公示日期">2023-12-05</td><td data-label="项目名称">2024-2026 年<strong>机电仪生产技术支持服务</strong>项目（成都海光）</td><td data-label="采购单位">阳江核电有限公司</td><td data-label="采购方式">单一来源</td><td data-label="成交报价">未公示</td></tr><tr><td data-label="公示日期">2020-04-07</td><td data-label="项目名称">红沿河核电厂 2020～2021 年<strong>换料阶段核岛设备维护</strong>项目（成都海光）</td><td data-label="采购单位">辽宁红沿河核电有限公司</td><td data-label="采购方式">—</td><td data-label="成交报价">未公示</td></tr></tbody></table></div>
+<p>以上六条全部为【一手-中广核电子商务平台原文】。</p>
+<p>补充：在「采购公告（非招标）」通道另有两条记录——2022-03-29《<strong>2022-2024 年战略合作激励协议（成都海光）</strong>采购启动公示》、2020-02-19《红沿河核电厂 2020～2021 年换料阶段核岛设备维护项目（成都海光）采购启动公示》。这说明"战略合作激励协议"是<strong>连续两期在签</strong>（2022-2024、2025-2027），不是一次性安排。【一手】</p>
+<p>另经核查，「中标结果公示」（招标通道）用 <code>%海光%</code> 只命中 3 条青海光热试验基地项目（"青<strong>海光</strong>热"的字符误匹配），<strong>与成都海光无关</strong>——也就是说，成都海光在中广核体系内<strong>不走公开招标通道，全部在单一来源／直接采购通道内成交</strong>。这条对本方案的含义：正面挤进它的标段几乎没有可能，唯一现实的路径是<strong>成为它的能力供给方</strong>。【一手＋推断】</p>
+<p><strong>三条读数：</strong></p>
+<ol>
+<li><strong>它是被"锁定"的供应商，不是比价赢来的供应商。</strong> 多份合同采用单一来源／直接采购，其中一份明确写明原因是"<strong>有效供应商有且仅有 1 家</strong>"。这意味着它在这些口径上几乎没有竞争者——<strong>我们要借的正是这个位置</strong>：进不去的是标段，进得去的是它的分包。</li>
+<li><strong>它的合同是"群厂"级的。</strong> 采购单位是中广核核电运营有限公司（集团运营层面），服务内容是"2025—2029 年群厂大修设备维护保养"，覆盖的是整盘中广核机组，而不是某一个电站。【一手】</li>
+<li><strong>它已经被纳入中广核的长期激励体系。</strong> "战略合作激励协议""大修业绩共享激励协议"这类合同的存在，说明双方关系已经超出普通甲乙方，进入了考核与分成绑定的层面。【一手＋推断】</li>
+</ol>
+<blockquote><p>顺带发现一条对华日有独立价值的线索：中广核黑龙江祥鹤新能源（金海光伏）2024-08-01 发布了"<strong>配备便携式无人机反制设备</strong>"询价采购成交结果公示——说明中广核<strong>新能源场站</strong>同样在采购反无人机设备，单站金额小、可批量复制，与 §8.2 扩散矩阵中的新能源线路相互印证。【一手】</p></blockquote>
+<hr>
+<h2 class="sec" id="s8"><span class="no">8</span>5. 资质家底与真实能力边界</h2>
+<div class="tw"><table><thead><tr><th>资质／事项</th><th>状态</th><th>标注</th></tr></thead><tbody><tr><td data-label="资质／事项">国家高新技术企业</td><td data-label="状态">已认定（四川省 2025 年第二批备案公示，序号 1426）</td><td data-label="标注">【一手】</td></tr><tr><td data-label="资质／事项">民用核安全设备许可证</td><td data-label="状态"><strong>未见于生态环境部（国家核安全局）截至 2025-02-28 的 230 家持证单位名单</strong>；同一名单中"中国核动力研究设计院"持设计／核安全机械设备 1、2、3 级</td><td data-label="标注">【一手】</td></tr><tr><td data-label="资质／事项">压力管道 GC2 级安装</td><td data-label="状态">有记录，显示 2023-02-21 到期</td><td data-label="标注">【二手】待复核</td></tr><tr><td data-label="资质／事项">QES 三体系、GJB、核工业专业承包二级</td><td data-label="状态">公司自述，未取得证书编号</td><td data-label="标注">【二手-自述】</td></tr><tr><td data-label="资质／事项">建筑机电安装承包、安全生产许可、承装修试、辐射安全许可、涉密集成、CCRC、保密资格</td><td data-label="状态">均未找到公开记录</td><td data-label="标注">需当面索证</td></tr></tbody></table></div>
+<p><strong>关于"民用核安全设备许可证"这条，必须说清楚，不能过度解读</strong>：</p>
+<ul>
+<li>在役检修（维修）与新建工程（安装）适用的资质口径不同；核电站业主对检修承包商的资格认定，还可能通过业主合格供应商评审而非统一许可证名单来实现。</li>
+<li>事实层面只能说到：<strong>海光不在国家核安全局公布的持证单位名单里，许可证在核动力院名下。</strong></li>
+<li>对方案的含义：<strong>不要把"核安全设备"相关责任揽到自己身上</strong>。我们要做的是电磁环境与频谱安全这类<strong>非核安全设备</strong>的技术服务，恰好绕开这条资质约束。同时，这也是一个必须问清楚的尽调问题。【推断】</li>
+</ul>
+<hr>
+<h2 class="sec" id="s9"><span class="no">9</span>6. 两个关键制度发现（决定怎么走）</h2>
+<h3>6.1 海光的采购制度：HGJF 编号体系</h3>
+<blockquote><p>HGJF - {FW 服务 | GC 工程 | WZ 物资} - {GKXJ 公开询价 | GKJT 公开竞谈} - 年份 - 流水号</p><p>CNSC - 年份 HGJF 流水号        ← 走中核集团供应链体系编号</p></blockquote>
+<p>对华日的三个含义：</p>
+<ol>
+<li>它有<strong>独立招标／询价权限</strong>，不必事事上报集团 → 第一单可以很快。</li>
+<li>常态采购方式是公开询价／竞谈，不是集团统一招标 → 门槛是<strong>资格与方案</strong>，不是"核电整包业绩"。</li>
+<li>它已经在买系统平台、检测服务、物资、人力外包 → 我们的"设备＋服务"正落在它的采购口径里，不需要教育它该买什么。</li>
+</ol>
+<h3>6.2 中核侧的采购已经"收口"</h3>
+<ul>
+<li>海南核电"低空小型飞行器入侵防御系统备件采购"，采购代理人是<strong>中核运维技术有限公司</strong>。【一手-2026-07 公告、2026-09 结果】</li>
+<li>三门 2026—2029、福清 2026—2028 的大修设备维护外委，也由中核运维招标。【二手】</li>
+</ul>
+<p><strong>结论</strong>：中核（中国核电）体系的运维与备件类采购，入口在<strong>中核运维技术有限公司</strong>；成都海光在中核基地更多是执行者，在中广核基地才是战略合作伙伴。<strong>双线推进：海光拿中广核侧的现场与技术业绩，中核运维拿中核侧的准入。</strong></p>
+<hr>
+<h2 class="sec" id="s10"><span class="no">10</span>7. 华日 × 海光：七个结合点（按首单概率排序）</h2>
+<div class="tw"><table><thead><tr><th>#</th><th>结合点</th><th>我们交付什么</th><th>海光拿去做什么</th><th>合同形态</th><th>金额量级</th><th>难度</th></tr></thead><tbody><tr><td data-label="#">1</td><td data-label="结合点">大修期频谱与电磁环境保障</td><td data-label="我们交付什么">现场频谱普查、临时频率规划、干扰源定位、关键系统电磁环境评估与报告</td><td data-label="海光拿去做什么">作为大修技术支持外委包里的专业子项，抬高技术分</td><td data-label="合同形态">技术服务分包</td><td data-label="金额量级">30—150 万</td><td data-label="难度">低</td></tr><tr><td data-label="#">2</td><td data-label="结合点">厂区电磁环境本底测绘与年度复测</td><td data-label="我们交付什么">本底测绘、监测点位设计、告警限值建议、年度复测</td><td data-label="海光拿去做什么">与设备管理／性能试验业务合并，形成新服务产品</td><td data-label="合同形态">服务＋设备</td><td data-label="金额量级">100—300 万</td><td data-label="难度">中</td></tr><tr><td data-label="#">3</td><td data-label="结合点">GNSS 授时链路干扰监测</td><td data-label="我们交付什么">监测设备＋干扰排查与合规建议</td><td data-label="海光拿去做什么">作为改造／运维项目的高附加值模块</td><td data-label="合同形态">设备＋服务</td><td data-label="金额量级">50—150 万／基地</td><td data-label="难度">中低</td></tr><tr><td data-label="#">4</td><td data-label="结合点">低空防御"侦测层"分供</td><td data-label="我们交付什么">侦测设备、测向、RID／云哨协议解析、友我识别</td><td data-label="海光拿去做什么">在海光承接的低空／安防项目里做侦测分供，规避反制合规风险</td><td data-label="合同形态">设备分包</td><td data-label="金额量级">30—500 万</td><td data-label="难度">中</td></tr><tr><td data-label="#">5</td><td data-label="结合点">改造总包中的"通信与频谱子系统"</td><td data-label="我们交付什么">子系统设计＋设备＋调试</td><td data-label="海光拿去做什么">它做改造总包，我们做专业子系统</td><td data-label="合同形态">工程分包</td><td data-label="金额量级">10—80 万</td><td data-label="难度">低</td></tr><tr><td data-label="#">6</td><td data-label="结合点">检测服务组合</td><td data-label="我们交付什么">电磁环境测量、EMC 评估、频谱评估</td><td data-label="海光拿去做什么">与它的无损检验能力打包，一站式对业主交付</td><td data-label="合同形态">联合体／联合服务</td><td data-label="金额量级">按项目</td><td data-label="难度">中</td></tr><tr><td data-label="#">7</td><td data-label="结合点">数据平台纳管与长期订阅</td><td data-label="我们交付什么">频谱态势平台、多基地数据纳管、年度报告</td><td data-label="海光拿去做什么">作为数字化专项，支撑它的高企技术叙事</td><td data-label="合同形态">软件＋服务</td><td data-label="金额量级">50—200 万</td><td data-label="难度">中高</td></tr></tbody></table></div>
+<p><strong>排序逻辑</strong>：1、3、5 是"低门槛＋不涉密＋不需要核电业绩"的入口；2、7 是把一次性项目变成年度收入的钩子；4 是唯一需要碰硬件合规的，放在后面。</p>
+<hr>
+<h2 class="sec" id="s11"><span class="no">11</span>8. 中核内部渗透路径：三阶段 + 扩散矩阵</h2>
+<h3>8.1 三阶段</h3>
+<div class="tw"><table><thead><tr><th>阶段</th><th>时间</th><th>目标</th><th>关键动作</th><th>里程碑</th></tr></thead><tbody><tr><td data-label="阶段">一：进门</td><td data-label="时间">0—6 个月</td><td data-label="目标">成为海光认可的技术服务供应商</td><td data-label="关键动作">①办中核／中广核供应商库注册（中核需国密环境）；②直连海光总部（双流）技术＋商务口，签框架／战略合作协议；③免费或低价交付一份《核电厂电磁环境与频谱安全本底评估》样板报告；④争取一次大修期现场频谱保障试点</td><td data-label="里程碑">框架协议 1 份＋试点小单 1 个</td></tr><tr><td data-label="阶段">二：上车</td><td data-label="时间">6—18 个月</td><td data-label="目标">拿到"可披露的涉核业绩"</td><td data-label="关键动作">①以海光为投标主体、我们做技术分供，参与 1—2 个电厂项目；②补资质（保密、安全许可、体系）；③与海光共建对外可用的联合方案与报价模板</td><td data-label="里程碑">1—2 个百万级合同＋可引用的核电案例</td></tr><tr><td data-label="阶段">三：铺开</td><td data-label="时间">18—36 个月</td><td data-label="目标">从"跟着海光"变成"海光离不开"</td><td data-label="关键动作">①把我们的服务与设备写进海光投标文件模板与技术标准；②借海光与核动力院平台参与标准／导则／白皮书；③横向复制到中核运维、中核检修、中国核电工程及各基地，不依赖海光独家</td><td data-label="里程碑">集团级框架入围 1 个＋多基地纳管</td></tr></tbody></table></div>
+<h3>8.2 扩散矩阵（"其他业务慢慢铺开"的具体落点）</h3>
+<div class="tw"><table><thead><tr><th>顺序</th><th>目标客户</th><th>采购口径／科目</th><th>主要门槛</th><th>我们的角色</th></tr></thead><tbody><tr><td data-label="顺序">1</td><td data-label="目标客户">成都海光总部</td><td data-label="采购口径／科目">HGJF 公开询价／竞谈：技术服务、系统集成、物资</td><td data-label="主要门槛">技术分与方案</td><td data-label="我们的角色">技术分供</td></tr><tr><td data-label="顺序">2</td><td data-label="目标客户">海光各项目部（红沿河、大亚湾、岭澳、阳江、台山、防城港、宁德）</td><td data-label="采购口径／科目">大修专项技术支持</td><td data-label="主要门槛">现场作业资格、安全培训</td><td data-label="我们的角色">现场服务</td></tr><tr><td data-label="顺序">3</td><td data-label="目标客户">海光华东分公司（连云港，田湾方向）</td><td data-label="采购口径／科目">同上</td><td data-label="主要门槛">同上</td><td data-label="我们的角色">现场服务</td></tr><tr><td data-label="顺序">4</td><td data-label="目标客户">中核运维技术有限公司</td><td data-label="采购口径／科目">大修设备维护外委、备件、运维</td><td data-label="主要门槛">供应商准入＋同类业绩</td><td data-label="我们的角色">联合体／分包</td></tr><tr><td data-label="顺序">5</td><td data-label="目标客户">各核电基地业主（秦山、三门、福清、海南、霞浦、田湾、漳州）</td><td data-label="采购口径／科目">系统维保、升级、备件、评估报告</td><td data-label="主要门槛">业绩＋资质</td><td data-label="我们的角色">原厂或分包</td></tr><tr><td data-label="顺序">6</td><td data-label="目标客户">中国核电工程有限公司</td><td data-label="采购口径／科目">新建机组系统集成、电磁环境预警课题</td><td data-label="主要门槛">整包业绩</td><td data-label="我们的角色">分包／课题合作</td></tr><tr><td data-label="顺序">7</td><td data-label="目标客户">中国核动力研究设计院（成都，同城）</td><td data-label="采购口径／科目">主动式无人机反制、电磁环境、科研配套</td><td data-label="主要门槛">已有采购先例（2024 年 317.44 万元，中科院沈阳计算所中标）</td><td data-label="我们的角色">原厂投标</td></tr><tr><td data-label="顺序">8</td><td data-label="目标客户">中核检修有限公司</td><td data-label="采购口径／科目">检修场景的技改与安防配套</td><td data-label="主要门槛">分包入库</td><td data-label="我们的角色">技术分供</td></tr></tbody></table></div>
+<h3>8.3 业务域扩散：哪些顺手、哪些勉强</h3>
+<ul>
+<li><strong>强关联（同一能力半径内，优先做）</strong>：频谱监测、无线电干扰排查与定位、GNSS 授时安全、无人机侦测、电磁环境评估、通信保障、多基地平台纳管。</li>
+<li><strong>机会型（需要伙伴，不要硬做）</strong>：计量检定数字化、性能试验数据平台、防异物／人员定位（物联网）、周界安防集成、无损检测数字化。</li>
+<li><strong>不建议碰</strong>：核安全设备本体、反制／干扰发射设备总包、警用器械。</li>
+</ul>
+<hr>
+<h2 class="sec" id="s12"><span class="no">12</span>9. 商业模型与价格锚</h2>
+<h3>9.1 钱在哪里（已有的一手结论）</h3>
+<p>中广核 2019—2026 年低空防御类已披露金额 3049.0 万元：货物 81.6%｜服务 12.7%｜工程 5.7%；剔除三笔一次性主设备大单后的常态口径：货物 59.8%｜服务 27.7%｜工程 12.5%。</p>
+<p><strong>解读：一次性大单看硬件，常态化采购看服务；软件从不单列，藏在硬件包或服务包里。</strong></p>
+<h3>9.2 可直接引用的价格锚</h3>
+<div class="tw"><table><thead><tr><th>类型</th><th>锚点</th><th>金额</th></tr></thead><tbody><tr><td data-label="类型">纯智力服务</td><td data-label="锚点">中广核嵊泗海上风电"低空飞行影响分析评价报告"</td><td data-label="金额">150 万元</td></tr><tr><td data-label="类型">系统设计与集成研制</td><td data-label="锚点">国家核安保技术中心低空系统设计与集成研制</td><td data-label="金额">118 万元＋</td></tr><tr><td data-label="类型">运维托管</td><td data-label="锚点">大亚湾 2026—2029 基地安保系统运维</td><td data-label="金额">236.4 万元／3 年（约 78.8 万／年）</td></tr><tr><td data-label="类型">研究课题</td><td data-label="锚点">中国核电工程"核电厂电磁环境预警系统研究"（5 项研究内容）</td><td data-label="金额">未公示</td></tr><tr><td data-label="类型">设备：固定式侦测</td><td data-label="锚点">政府采购网主要标的信息</td><td data-label="金额">33.79 万元／套</td></tr><tr><td data-label="类型">设备：云哨侦测</td><td data-label="锚点">同上</td><td data-label="金额">49.46 万元</td></tr><tr><td data-label="类型">设备：手持侦测</td><td data-label="锚点">同上</td><td data-label="金额">5.2—5.7 万元</td></tr><tr><td data-label="类型">设备：车载察打诱一体</td><td data-label="锚点">同上</td><td data-label="金额">41.8—65 万元／台</td></tr><tr><td data-label="类型">整包：核电厂低空防御系统</td><td data-label="锚点">中核、中广核实价</td><td data-label="金额">500—885 万元</td></tr></tbody></table></div>
+<h3>9.3 三种合同形态</h3>
+<div class="tw"><table><thead><tr><th>顺序</th><th>形态</th><th>机制</th><th>我们的收益</th><th>海光的收益</th></tr></thead><tbody><tr><td data-label="顺序">先做</td><td data-label="形态">技术服务分包</td><td data-label="机制">海光中标、我们交付技术服务</td><td data-label="我们的收益">低风险入场、拿业绩</td><td data-label="海光的收益">提升技术分与毛利</td></tr><tr><td data-label="顺序">再做</td><td data-label="形态">设备集成供货</td><td data-label="机制">我们供设备、海光对业主交付</td><td data-label="我们的收益">硬件毛利</td><td data-label="海光的收益">合同额做大</td></tr><tr><td data-label="顺序">长期</td><td data-label="形态">联合体投标</td><td data-label="机制">海光资质＋我们技术</td><td data-label="我们的收益">分成与品牌露出</td><td data-label="海光的收益">补齐能力短板</td></tr></tbody></table></div>
+<p><strong>报价原则</strong>：第一单不要卷毛利，要"可披露业绩＋现场数据"；服务包按"固定总价＋人天"计，<strong>把数据所有权与年度复测留在自己手里</strong>；设备包<strong>保留接口与协议解析的自主实现</strong>，这是不可替代性的根。</p>
+<hr>
+<h2 class="sec" id="s13"><span class="no">13</span>10. 首次接触一页纸</h2>
+<p><strong>对象优先级</strong>：海光总部（成都双流）技术与商务负责人 → 华东分公司（连云港）→ 具体项目部（大修计划所在基地）。</p>
+<p><strong>开场定位一句话</strong>：</p>
+<blockquote><p>"我们不做核岛检修。我们做检修现场你们现在没人专职做的两件事：电磁环境看得见、干扰源找得到。我们想给贵司的能力加一个模块，而不是卖一堆设备。"</p></blockquote>
+<p><strong>带三份材料</strong>：①《核电厂电磁环境与频谱安全本底评估》样板报告（脱敏，用可公开的类比场景）；②产品与能力清单（频谱监测、测向定位、GNSS 干扰监测、低空频谱侦测、平台纳管，附国产化与资质现状）；③联合服务设想（谁进场、谁交付、谁分成）。</p>
+<p><strong>必须问到的问题</strong>：</p>
+<ol>
+<li>2027 年各基地大修计划里，哪些包会设"专项技术服务"？技术评分表长什么样？</li>
+<li>现在大修现场的无线电设备与频率协调谁在管？出过干扰问题吗？</li>
+<li>厂区电磁环境／EMC 这块，业主自己做还是外包？有没有既有供应商？</li>
+<li>你们承接低空／安防类项目时，侦测层从谁那里买？</li>
+<li>多少金额以下你们可以自主询价？走哪个平台、哪个编号？</li>
+<li>技术型分包的资质与保密要求是什么？我们还缺什么？</li>
+</ol>
+<p><strong>要争取的三样东西</strong>：①框架／战略合作协议（哪怕不含金额，先要身份）；②一个试点单（越小越好，只要抬头是"某某核电项目部"）；③一次引荐（到核动力院相关所或某个关系融洽的电厂技术口）。</p>
+<hr>
+<h2 class="sec" id="s14"><span class="no">14</span>11. 风险与反制</h2>
+<div class="tw"><table><thead><tr><th>#</th><th>风险</th><th>触发条件</th><th>反制动作</th></tr></thead><tbody><tr><td data-label="#">1</td><td data-label="风险">被"学走"</td><td data-label="触发条件">海光有软件开发与系统集成范围，可能把方案内部化</td><td data-label="反制动作">核心器件与算法不交底；用"授权＋持续升级＋数据服务"绑定；条件成熟谈共建实验室或排他条款</td></tr><tr><td data-label="#">2</td><td data-label="风险">被当陪标／背书</td><td data-label="触发条件">拿我们的方案补技术分，最后别家中标</td><td data-label="反制动作">分阶段验证诚意：先小单再联合体；方案文档分级披露</td></tr><tr><td data-label="#">3</td><td data-label="风险">体系内既得利益</td><td data-label="触发条件">西安中核核仪器、中核检修等封住品类</td><td data-label="反制动作">只打侦测层与服务层，不与总包正面冲突</td></tr><tr><td data-label="#">4</td><td data-label="风险">反制设备合规传导</td><td data-label="触发条件">交付含发射部件，客户需公安授权</td><td data-label="反制动作">只做侦测／评估／平台；反制由有资质方承担并写明合规链路</td></tr><tr><td data-label="#">5</td><td data-label="风险">资质与保密门槛</td><td data-label="触发条件">涉核项目要求保密资质、核安全文化、HAF003 类质保体系</td><td data-label="反制动作">先做不含密级的技术服务，边做边补体系</td></tr><tr><td data-label="#">6</td><td data-label="风险">中核平台国密 TLS 不可直读</td><td data-label="触发条件">无法直接获取中核采购公告与完成注册</td><td data-label="反制动作">借海光流程与账号完成注册；部署国密浏览器／证书环境</td></tr><tr><td data-label="#">7</td><td data-label="风险">海光"总部—项目部"目标不一致</td><td data-label="触发条件">总部谈框架、项目部不认，或反之</td><td data-label="反制动作">双线推进：总部签框架拿身份，项目部落单拿业绩</td></tr><tr><td data-label="#">8</td><td data-label="风险">需求释放节奏不确定</td><td data-label="触发条件">核设施低空／电磁类采购"测试热闹、采购分散"</td><td data-label="反制动作">以"可反复采购的服务"而非"一次性大单"为商业模型</td></tr><tr><td data-label="#">9</td><td data-label="风险">海光入口在中核侧权重有限</td><td data-label="触发条件">中核运维收口后，海光只是执行方</td><td data-label="反制动作">同时建立中核运维的准入路径，不把宝押在一家</td></tr><tr><td data-label="#">10</td><td data-label="风险">订单可见性影响估值</td><td data-label="触发条件">涉核收入确认时点不确定</td><td data-label="反制动作">用"服务型切入"路径测算，不把涉核收入提前计入</td></tr></tbody></table></div>
+<hr>
+<h2 class="sec" id="s15"><span class="no">15</span>12. 待核清单</h2>
+<p><strong>公司侧（尽调）</strong></p>
+<ul>
+<li>[ ] 三条沿革（2011／2012／2014）的书面确认与相关资产、人员、资质承接情况</li>
+<li>[ ] 近三年营业收入、利润、人均产值（决定它的采购预算与付款能力）</li>
+<li>[ ] 员工口径解释：参保 1457 vs 自述 2600，劳务派遣与项目制用工占比</li>
+<li>[ ] 资质证书原件：民用核安全设备安装／无损检验、施工资质、涉密资质等级</li>
+<li>[ ] 年度采购总额、服务类占比、是否存在框架供应商名单</li>
+<li>[ ] 与中核检修、中国核电工程、中核运维的分工界面</li>
+<li>[ ] 是否有混改、增资、引战或上市计划（若有，切入方式可升级为股权合作）</li>
+<li>[ ] 决策链：董事长／法人之下，技术、商务、采购三条线的实际拍板人</li>
+</ul>
+<p><strong>业务侧（商务）</strong></p>
+<ul>
+<li>[ ] 2027 年各基地大修计划与专项技术服务包清单</li>
+<li>[ ] 大修现场无线电管理与电磁环境现状、既有供应商</li>
+<li>[ ] 低空／安防类项目中的侦测层采购来源</li>
+<li>[ ] 中核运维的供应商入库条件与国密环境操作要求</li>
+<li>[ ] 本报告中所有【二手】中标数据的原始公示回验（中广核侧可在 ecp.cgnpc.com.cn 直接复核；中核侧需国密环境）</li>
+</ul>
+<hr>
+<h2 class="sec" id="s16"><span class="no">16</span>附：来源与可信度</h2>
+<div class="tw"><table><thead><tr><th>数据块</th><th>来源</th><th>可信度</th></tr></thead><tbody><tr><td data-label="数据块">工商登记、股权、参保、曾用名</td><td data-label="来源">企查查移动页内嵌 JSON 字段、360 百科（引国家企业信用信息公示系统口径）、爱企查</td><td data-label="可信度">【二手-字段级一致】</td></tr><tr><td data-label="数据块">民用核安全设备持证单位名单（230 家）</td><td data-label="来源">生态环境部（国家核安全局）2025-03 公告及附件 PDF</td><td data-label="可信度">【一手】</td></tr><tr><td data-label="数据块">高新技术企业认定</td><td data-label="来源">高新技术企业认定工作网，四川省 2025 年第二批备案公示（序号 1426）</td><td data-label="可信度">【一手】</td></tr><tr><td data-label="数据块">基地与人员规模</td><td data-label="来源">政府就业服务平台、校招简章、招聘平台（公司自述）</td><td data-label="可信度">【二手-企业自述】</td></tr><tr><td data-label="数据块">2026 年中标记录（昌江 289 万、中广核后勤 86.02 万、防城港／岭澳／广东核电合营改造包）</td><td data-label="来源">招投标聚合平台与搜索快照转录</td><td data-label="可信度">【二手-待回一手】</td></tr><tr><td data-label="数据块">海光作为采购人的项目（HGJF 编号）</td><td data-label="来源">招标信息平台转录</td><td data-label="可信度">【二手-编号完整】</td></tr><tr><td data-label="数据块">中核运维代理采购（海南核电备件等）</td><td data-label="来源">中核侧公开公告与转录</td><td data-label="可信度">【一手＋二手】</td></tr><tr><td data-label="数据块"><strong>海光在中广核的六条采购记录（群厂／阳江／红沿河，含 86.02 万元与 302.4 万元报价）</strong></td><td data-label="来源">中广核电子商务平台「采购结果公示」列表 + 明细 JSON <code>/detail/{dataId}/{detailId}.json</code></td><td data-label="可信度">【一手】2026-09-16 实测</td></tr><tr><td data-label="数据块">核动力院 2024 年主动式无人机反制系统采购（317.44 万元）</td><td data-label="来源">项目编号 1-13-HW-GKZB-240149 公示</td><td data-label="可信度">【一手】</td></tr><tr><td data-label="数据块">中广核采购金额结构与单价锚</td><td data-label="来源">中广核电子商务平台、中国政府采购网原文</td><td data-label="可信度">【一手】</td></tr></tbody></table></div>
+<blockquote><p>免责：标注为【二手】【推断】的内容不得作为对外事实引用。所有价格均为含供货、安装调试、培训、质保的成交价，非硬件成本。</p></blockquote>
+<blockquote><p>取证环境说明：2026-09-16 13:15—16:00 期间 Chrome 远程调试通道曾失效（WebSocket 握手无响应），当轮底稿的部分中标记录以聚合平台转录为主；通道恢复后已于当日完成中广核侧一手回验（见 §4.5），中核侧因平台仅支持国密 TLS，仍为转录口径，待补验。</p></blockquote>
+<div class="foot">华日通讯 × 成都海光 · 中核体系切入路径研究<br>编制日期 2026-09-16 ｜ 单文件移动版 ｜ 事实/二手/推断已逐条标注</div>
+</div>
+<button class="btn-top" id="topBtn" aria-label="回到顶部">↑</button>
+<script>
+(function(){var b=document.getElementById('topBtn');window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>500)},{passive:true});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.querySelectorAll('.tw').forEach(function(w){if(w.scrollWidth>w.clientWidth+4)w.style.boxShadow='inset -8px 0 8px -8px rgba(16,42,58,.18)'});})();
+</script>
+</body>
+</html>
