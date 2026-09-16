@@ -18,12 +18,22 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans 
 .cover .k{display:inline-block;font-size:11.5px;letter-spacing:.14em;background:rgba(255,255,255,.13);padding:4px 12px;border-radius:999px;color:#d8e5ef;margin-bottom:14px}
 .cover h1{font-size:clamp(21px,5vw,31px);line-height:1.4;margin-bottom:10px;color:#fff}
 .cover .sub{font-size:13.5px;color:#bcd0df;line-height:1.7}
-.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px}
-.toc h2{font-size:14.5px;color:var(--ink2);margin-bottom:10px}
-.toc-grid{display:grid;grid-template-columns:1fr;gap:4px}
+.toc{background:linear-gradient(180deg,#ffffff,#fbfaf6);border:1px solid var(--line);border-radius:16px;padding:16px 14px;margin-bottom:16px;box-shadow:0 3px 14px -12px rgba(16,42,58,.5)}
+.toc h2{font-size:14.5px;color:var(--ink2);margin-bottom:6px}
+.toc .toc-hint{font-size:11.5px;color:var(--ink3);line-height:1.55;margin-bottom:12px}
+.toc .toc-hint b{color:var(--teal)}
+.toc-grid{display:grid;grid-template-columns:1fr;gap:7px}
 @media(min-width:680px){.toc-grid{grid-template-columns:1fr 1fr}}
-.toc a{font-size:13px;color:var(--navy);text-decoration:none;padding:5px 7px;border-radius:8px;line-height:1.45;display:block}
-.toc a:hover{background:var(--teal-soft)}
+.toc a{position:relative;display:block;font-size:13.5px;font-weight:600;color:var(--navy);text-decoration:none;padding:11px 30px 11px 13px;border:1px solid #e2e8ee;border-radius:11px;background:#fff;line-height:1.45;transition:background .16s,border-color .16s,transform .12s,box-shadow .16s}
+.toc a::before{content:"";position:absolute;left:0;top:9px;bottom:9px;width:3px;border-radius:0 3px 3px 0;background:var(--teal);opacity:0;transition:opacity .16s}
+.toc a::after{content:"›";position:absolute;right:11px;top:50%;transform:translateY(-50%);font-size:18px;font-weight:700;color:var(--teal);opacity:.5;line-height:1}
+.toc a:hover{background:var(--teal-soft);border-color:#bcd8d3;box-shadow:0 4px 12px -10px rgba(13,92,87,.65)}
+.toc a:hover::before,.toc a:hover::after{opacity:1}
+.toc a:active{transform:scale(.985);background:#d7e8e3}
+a.xref{color:var(--teal);font-weight:600;text-decoration:none;border-bottom:1px dashed rgba(13,92,87,.55);background:rgba(13,92,87,.06);padding:0 3px;border-radius:4px;white-space:nowrap;cursor:pointer}
+a.xref:hover{background:var(--teal-soft);border-bottom-style:solid}
+a.xref:active{background:#cfe6e0}
+.anchor{display:block;height:0;overflow:hidden}
 section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 16px;margin-bottom:16px}
 @media(min-width:720px){section{padding:28px 30px}}
 h1,h2,h3,h4,h5{color:var(--navy);line-height:1.45}
@@ -95,9 +105,9 @@ body{overflow-x:hidden;max-width:100%}
 <header class="cover">
   <span class="k">深度研究报告 · 中核集团为主</span>
   <h1>华日通讯：彭州、仁寿基地/测试厂核查备忘录</h1>
-  <div class="sub">低空防御 · 电磁频谱安全 · 核电站与重要设施 ｜ 调研日期 2026-09-11 ｜ 外部 Chrome + 官方采购平台/公告核实 ｜ 置信度标签：<span style="color:#9fd3c7">已证实</span> / <span style="color:#e8c98b">采购转述</span> / <span style="color:#f0b8b0">媒体口径</span></div>
+  <div class="sub">低空防御 · 电磁频谱安全 · 核电站与重要设施 ｜ 调研日期 2026-09-11 ｜ 依据官方采购平台与公开公告核实 ｜ 置信度标签：<span style="color:#9fd3c7">已证实</span> / <span style="color:#e8c98b">采购转述</span> / <span style="color:#f0b8b0">媒体口径</span></div>
 </header>
-<nav class="toc"><h2>📑 目录（点击跳转）</h2><div class="toc-grid"><a href="#s1">一、彭州：已证实，且项目仍在推进</a><a href="#s2">二、仁寿：公开渠道未发现华日基地/测试厂</a><a href="#s3">三、彭州基地对华日业务的意义（初步判断）</a><a href="#s4">四、主要来源</a></div></nav>
+<nav class="toc"><h2>📑 目录 · 点一下直接跳过去</h2><div class="toc-hint">下面每一条都可点击；正文里 <b>§</b> 开头的章节编号同样可以点。</div><div class="toc-grid"><a href="#s1">一、彭州：已证实，且项目仍在推进</a><a href="#s2">二、仁寿：公开渠道未发现华日基地/测试厂</a><a href="#s3">三、彭州基地对华日业务的意义（初步判断）</a><a href="#s4">四、主要来源</a></div></nav>
 
 <blockquote><p>核查日期：2026-09-11 ｜ 方法：外部 Chrome 检索（百度/企业信息平台/政府媒体），工作区既有研报交叉</p><p>结论前置：<strong>彭州有实锤（华日旗下子公司 + 科研生产及测试基地项目，2025–2026 仍在推进）；仁寿公开渠道未查到任何华日基地/测试厂记录，需向公司内部核实。</strong></p></blockquote>
 <hr>

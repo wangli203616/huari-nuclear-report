@@ -18,12 +18,22 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans 
 .cover .k{display:inline-block;font-size:11.5px;letter-spacing:.14em;background:rgba(255,255,255,.13);padding:4px 12px;border-radius:999px;color:#d8e5ef;margin-bottom:14px}
 .cover h1{font-size:clamp(21px,5vw,31px);line-height:1.4;margin-bottom:10px;color:#fff}
 .cover .sub{font-size:13.5px;color:#bcd0df;line-height:1.7}
-.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px}
-.toc h2{font-size:14.5px;color:var(--ink2);margin-bottom:10px}
-.toc-grid{display:grid;grid-template-columns:1fr;gap:4px}
+.toc{background:linear-gradient(180deg,#ffffff,#fbfaf6);border:1px solid var(--line);border-radius:16px;padding:16px 14px;margin-bottom:16px;box-shadow:0 3px 14px -12px rgba(16,42,58,.5)}
+.toc h2{font-size:14.5px;color:var(--ink2);margin-bottom:6px}
+.toc .toc-hint{font-size:11.5px;color:var(--ink3);line-height:1.55;margin-bottom:12px}
+.toc .toc-hint b{color:var(--teal)}
+.toc-grid{display:grid;grid-template-columns:1fr;gap:7px}
 @media(min-width:680px){.toc-grid{grid-template-columns:1fr 1fr}}
-.toc a{font-size:13px;color:var(--navy);text-decoration:none;padding:5px 7px;border-radius:8px;line-height:1.45;display:block}
-.toc a:hover{background:var(--teal-soft)}
+.toc a{position:relative;display:block;font-size:13.5px;font-weight:600;color:var(--navy);text-decoration:none;padding:11px 30px 11px 13px;border:1px solid #e2e8ee;border-radius:11px;background:#fff;line-height:1.45;transition:background .16s,border-color .16s,transform .12s,box-shadow .16s}
+.toc a::before{content:"";position:absolute;left:0;top:9px;bottom:9px;width:3px;border-radius:0 3px 3px 0;background:var(--teal);opacity:0;transition:opacity .16s}
+.toc a::after{content:"›";position:absolute;right:11px;top:50%;transform:translateY(-50%);font-size:18px;font-weight:700;color:var(--teal);opacity:.5;line-height:1}
+.toc a:hover{background:var(--teal-soft);border-color:#bcd8d3;box-shadow:0 4px 12px -10px rgba(13,92,87,.65)}
+.toc a:hover::before,.toc a:hover::after{opacity:1}
+.toc a:active{transform:scale(.985);background:#d7e8e3}
+a.xref{color:var(--teal);font-weight:600;text-decoration:none;border-bottom:1px dashed rgba(13,92,87,.55);background:rgba(13,92,87,.06);padding:0 3px;border-radius:4px;white-space:nowrap;cursor:pointer}
+a.xref:hover{background:var(--teal-soft);border-bottom-style:solid}
+a.xref:active{background:#cfe6e0}
+.anchor{display:block;height:0;overflow:hidden}
 section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 16px;margin-bottom:16px}
 @media(min-width:720px){section{padding:28px 30px}}
 h1,h2,h3,h4,h5{color:var(--navy);line-height:1.45}
@@ -100,7 +110,7 @@ body{overflow-x:hidden;max-width:100%}
   <h1>核工业低空与电磁安全采购：价值构成拆解 + 华日通讯整体解决方案</h1>
   <div class="sub">采购价值构成拆解（硬件/软件/服务占比）· 型号级单价锚点 · 三层方案架构 · 报价结构 · 资质门槛清单 · 进入路线 ｜ 编制日期 2026-09-14 ｜ 一手取证：中广核电子商务平台 + 中国政府采购网</div>
 </header>
-<nav class="toc"><h2>📑 目录（点击跳转）</h2><div class="toc-grid"><a href="#s1">0. 一页结论</a><a href="#s2">1. 价值构成拆解：硬件 / 软件 / 服务到底占多少</a><a href="#s3">2. 硬件 BOM 与型号级单价锚点（一手）</a><a href="#s4">3. 采购方式与资格门槛（决定谁能投）</a><a href="#s5">4. 华日通讯整体解决方案（核心交付）</a><a href="#s6">5. 三种商业模式与收益测算</a><a href="#s7">6. 风险清单</a><a href="#s8">7. 数据来源与可信度</a></div></nav>
+<nav class="toc"><h2>📑 目录 · 点一下直接跳过去</h2><div class="toc-hint">下面每一条都可点击；正文里 <b>§</b> 开头的章节编号同样可以点。</div><div class="toc-grid"><a href="#s1">0. 一页结论</a><a href="#s2">1. 价值构成拆解：硬件 / 软件 / 服务到底占多少</a><a href="#s3">2. 硬件 BOM 与型号级单价锚点（一手）</a><a href="#s4">3. 采购方式与资格门槛（决定谁能投）</a><a href="#s5">4. 华日通讯整体解决方案（核心交付）</a><a href="#s6">5. 三种商业模式与收益测算</a><a href="#s7">6. 风险清单</a><a href="#s8">7. 数据来源与可信度</a></div></nav>
 
 <blockquote><p>编制：2026-09-14 ｜ 方法：web-access skill（Chrome CDP 一手取证）+ 政府采购网分项明细 + 中广核电子商务平台</p><p>用途：①回答"这类项目里硬件/软件/服务费的占比"；②给出华日面向中核/中广核的整体解决方案与报价结构</p><p>标注规则：【一手】=官方平台/公告原文；【推算】=基于一手数据的计算；【推断】=分析判断</p><p>关联底稿：<code>华日通讯-核工业采购中标-明细底稿-20260911.md</code></p></blockquote>
 <hr>
@@ -165,7 +175,7 @@ body{overflow-x:hidden;max-width:100%}
 <ul>
 <li>海珠区低空气象监测网（一期）合同包2：L 波段风廓线雷达（新气象 YKD2）<strong>1,140,000 元/套</strong>；相干多普勒测风激光雷达（大舜激光，中距型）</li>
 </ul>
-<h3>2.2 单价速查表（做报价时直接引用）</h3>
+<h3>2.2 单价速查表（做报价时直接引��）</h3>
 <div class="tw"><table><thead><tr><th>设备类型</th><th>单价区间（元）</th><th>一手样本</th></tr></thead><tbody><tr><td data-label="设备类型">车载式察打诱一体（固定式）</td><td data-label="单价区间（元）"><strong>418,000 – 650,000</strong></td><td data-label="一手样本">贵州公安 41.8 万 ×9；安徽工信厅 65 万 ×1</td></tr><tr><td data-label="设备类型">云哨类侦测设备</td><td data-label="单价区间（元）">494,600</td><td data-label="一手样本">昌吉公安（锐盾 RD-S1Pro）</td></tr><tr><td data-label="设备类型">固定式侦测设备</td><td data-label="单价区间（元）">337,900</td><td data-label="一手样本">昌吉公安（锐盾 RD-GDZC-627）</td></tr><tr><td data-label="设备类型">反制盾</td><td data-label="单价区间（元）">277,600</td><td data-label="一手样本">昌吉公安（锐盾 RD-FWD09）</td></tr><tr><td data-label="设备类型">侦测反制枪</td><td data-label="单价区间（元）">178,000</td><td data-label="一手样本">昌吉公安（锐盾 RD-BX2000D）</td></tr><tr><td data-label="设备类型">穿越机察打一体机</td><td data-label="单价区间（元）">79,000</td><td data-label="一手样本">贵州公安（湖南坤雷 URA560A）</td></tr><tr><td data-label="设备类型">便携式干扰/反制</td><td data-label="单价区间（元）">60,000 – 84,000</td><td data-label="一手样本">贵州公安 6 万；中广核三澳 8.4 万</td></tr><tr><td data-label="设备类型">手持侦测/探测定位</td><td data-label="单价区间（元）">52,000 – 57,000</td><td data-label="一手样本">贵州公安 5.2 万；昌吉公安 5.7 万</td></tr><tr><td data-label="设备类型">光电设备（整包）</td><td data-label="单价区间（元）">494,666</td><td data-label="一手样本">中广核陆丰</td></tr><tr><td data-label="设备类型">低空测风雷达</td><td data-label="单价区间（元）">232,828</td><td data-label="一手样本">中广核定江风电场</td></tr><tr><td data-label="设备类型">L 波段风廓线雷达</td><td data-label="单价区间（元）">1,140,000</td><td data-label="一手样本">海珠区低空气象网</td></tr><tr><td data-label="设备类型"><strong>整套核电厂低空防御系统</strong></td><td data-label="单价区间（元）"><strong>500 万 – 885 万</strong></td><td data-label="一手样本">中核中国核电工程 885.16 万；中广核三澳 504.3 万、太平岭 547.4 万、宁德 603 万；中核示范快堆 570.26 万</td></tr></tbody></table></div>
 <h3>2.3 官方公示到底能拿到什么：四层信息梯度</h3>
 <p>先说制度性原因：<strong>核工业采购适用《招标投标法》，不适用《政府采购法》</strong>，因此<strong>没有</strong>政府采购网那种"主要标的信息（货物品牌 / 规格型号 / 数量 / 单价）"明细表。这是"看不到 BOM"的制度原因，不是找不到。</p>
